@@ -1,7 +1,5 @@
---- 
-layout: post 
-title: Record Screen Demos on Fedora Using the Command Line (ffmpeg) 
-date: '2014-05-07T12:58:00.000+10:00' 
+= OLD DONT PUBLISH Record Screen Demos on Fedora Using the Command Line (ffmpeg) 
+:published_at: 2010-05-07
 author: Jared Morgan 
 tags: 
 - Screencast 
