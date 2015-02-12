@@ -1,8 +1,0 @@
-
-= Test Post
-
-
-
-== Testing out HubPress
-
-This is a test post for HubPress. Test.
