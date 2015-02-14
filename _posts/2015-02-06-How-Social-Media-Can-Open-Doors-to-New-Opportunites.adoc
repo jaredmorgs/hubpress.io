@@ -42,6 +42,8 @@ All these skills are incredibly important to a product that is trying to make th
 
 === Why HubPress Rocks
 
+http://hubpress.io/[HubPress] lets you free yourself from heavy configuration, provides a real-time editing environment, rich social media configuration, and a variety of baked-in styles. But most importantly, it is one of the only forkable blog offerings that has made the wise decision to use the https://github.com/asciidoctor/asciidoctor.js[AsciiDoctor ] Javascript port to provide tech bloggers far greater control over how they structure blog posts.
+
 HubPress is different to other Jekyll GitHub Pages Blogging solutions:
 
 * No PC required
@@ -51,10 +53,6 @@ HubPress is different to other Jekyll GitHub Pages Blogging solutions:
 * No Gemfiles to install and configure.
 * No Git commands to master.
 * If you host your images, you can even direct link to them and not have to commit to Git.
-
-=== How HubPress Rocks
-
-http://hubpress.io/[HubPress] lets you free yourself from heavy configuration, provides a real-time editing environment, rich social media configuration, and a variety of baked-in styles. But most importantly, it is one of the only forkable blog offerings that has made the wise decision to use the https://github.com/asciidoctor/asciidoctor.js[AsciiDoctor ] Javascript port to provide tech bloggers far greater control over how they structure blog posts.
 
 === Shut Up And Take My Money
 
