@@ -19,4 +19,13 @@ http://hubpress.io/[HubPress] lets you free yourself from heavy configuration, p
 
 If you love writing about technology, and love to make complex instructions with code samples and detailed tables, you would have already found that you have to make a fair few sacrifices with Markdown posts. 
 
-AsciiDoctor -- which was championed by former Red Hat alumni https://github.com/mojavelinux[Dan Allen] -- builds upon the already fantastic http://asciidoc.org/[AsciiDoc] by adding a toolchain and various compatibility layers. Recently the AsciiDoctor team was successful in getting https://github.com/asciidoctor/jekyll-asciidoc[the jekyll-asciidoc plug-in] listed on the supported Converter list on the http://jekyllrb.com/docs/plugins/[Jekyll Plugins] page.
+Enter AsciiDoc (or more accurately, AsciiDoctor).
+
+AsciiDoctor -- which was championed by former Red Hat alumni https://github.com/mojavelinux[Dan Allen] -- builds upon the already fantastic http://asciidoc.org/[AsciiDoc] by adding a toolchain and various compatibility layers. 
+
+How this affects blog writers is that you don't have to kludge your way around the deficiencies of Markdown, and you can get on with the task of writing rich blog posts with complex procedures and code samples.
+
+== Where My HubPress Journey Started
+
+I became interested in AsciiDoctor recently when the AsciiDoctor team announced they were successful in getting the https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc plug-in] listed on the supported Converter list on the http://jekyllrb.com/docs/plugins/[Jekyll Plugins] page.
+
