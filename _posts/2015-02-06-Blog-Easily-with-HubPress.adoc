@@ -1,0 +1,22 @@
+
+= Blog Easily with HubPress
+:hp-tags: HubPress, Markdown, AsciiDoc, Migration
+
+== Summary
+
+There's a new way to blog using GitHub Pages or GitHub:
+
+* No PC required
+** Blog on your tablet or phablet.
+** No software to install.
+** An internet connection is all you need.
+* No Gemfiles to install and configure.
+* No Git commands to master.
+
+http://hubpress.io/[HubPress] lets you free yourself from heavy configuration, provides a real-time editing environment, rich social media configuration, and a variety of baked-in styles. But most importantly, it is one of the only forkable blog offerings that has made the wise decision to use the https://github.com/asciidoctor/asciidoctor.js[AsciiDoctor ] Javascript port to provide tech bloggers far greater control over how they structure blog posts.
+
+== Why AsciiDoc
+
+If you love writing about technology, and love to make complex instructions with code samples and detailed tables, you would have already found that you have to make a fair few sacrifices with Markdown posts. 
+
+AsciiDoctor -- which was championed by former Red Hat alumni https://github.com/mojavelinux[Dan Allen] -- builds upon the already fantastic http://asciidoc.org/[AsciiDoc] by adding a toolchain and various compatibility layers. Recently the AsciiDoctor team was successful in getting https://github.com/asciidoctor/jekyll-asciidoc[the jekyll-asciidoc plug-in] listed on the supported Converter list on the http://jekyllrb.com/docs/plugins/[Jekyll Plugins] page.
