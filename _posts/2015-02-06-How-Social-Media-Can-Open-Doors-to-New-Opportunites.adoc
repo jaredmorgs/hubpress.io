@@ -60,5 +60,4 @@ http://hubpress.io/[HubPress] lets you free yourself from heavy configuration, p
 
 Well, you won't need to shell out any clams. HubPress is Free!
 
-
-
+Head over to https://github.com/HubPress/hubpress.io/blob/master/README.adoc[the Docs] and learn how to set up your blog in only a few clicks.
