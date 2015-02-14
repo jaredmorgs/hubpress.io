@@ -29,3 +29,4 @@ How this affects blog writers is that you don't have to kludge your way around t
 
 I became interested in AsciiDoctor recently when the AsciiDoctor team announced they were successful in getting the https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc plug-in] listed on the supported Converter list on the http://jekyllrb.com/docs/plugins/[Jekyll Plugins] page.
 
+I started collaborating in a docs capacity with the team on a forkable https://github.com/asciidoctor/jekyll-asciidoc-quickstart[jekyll-asciidoctor Quickstart Blog] repo that used JenkinsCI to enable bloggers to initially configure a Jekyll blog with AsciiDoctor support. Once configured, you could set up the JenkinsCI build server to intercept commits on the `gh-pages` branch of the repository. I was just about to start configuring the repository, and installing all  
