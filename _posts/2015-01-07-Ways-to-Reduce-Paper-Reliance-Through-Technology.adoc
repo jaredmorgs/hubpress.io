@@ -1,5 +1,5 @@
 = Ways to Reduce Paper Reliance Through Technology 
-:published_at:2015-01-07 
+:published_at: 2015-01-07 
 :hp-tags: Environment, Process, Android, Google Keep
 
 I read a blog post about http://unclutterer.com/2010/11/30/identifying-bad-processes/[Identifying Bad
