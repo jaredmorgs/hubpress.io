@@ -24,3 +24,4 @@ Even though I measured once, measured twice, I still had some issues with measur
 
 All in all, they've come up really nicely. All up, I spent about $100 including some tools I needed for the job. Most of the expense was for the plank of plywood I used to convert my glass-top office desk to a workbench. That paid dividends these two weekends for sure.
 
+image::http://jaredmorgs.github.io/images/Tree_Border_One.jpg[title="The Finished Product", width="300, height="500"]
