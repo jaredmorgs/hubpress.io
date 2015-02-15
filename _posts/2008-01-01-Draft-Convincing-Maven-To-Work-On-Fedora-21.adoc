@@ -21,11 +21,12 @@ sudo yum install maven
 
 After you install the package, running `mvn --version` will likely cause something like the following message to display.
 
-```
+[source,bash]
+----
 mvn --version
 Error: JAVA_HOME is not defined correctly.
   We cannot execute /usr/java/jdk1.7.0_17/bin/java
-```
+----
 
 So what now? Well, maven requires a Java Development Kit. As you can see I *have* a JDK installed. Pffff.
 
@@ -33,32 +34,37 @@ So what now? Well, maven requires a Java Development Kit. As you can see I *have
 
 Suggestions on StackOverflow lead me to believe that all I needed to do was set JAVA_HOME to the correct JDK.
 
-```
+[source,bash]
+----
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
-```
+----
+
 1.8.0 is the latest Oracle JDK on Fedora 21. That wasn't enough though. I needed to also set PATH in my .bashrc file. *This is where the problem was for me*: I had an old JDK declared in the .bashrc file that had been carried over from previous versons of my OS as I upgraded.
 
-```
+[source,bash]
+----
 ## Environment Variables
 
 export JAVA_HOME=/usr/java/jdk1.7.0_17
 PATH=$JAVA_HOME/bin/java:$PATH
 export PATH
-```
+----
 
 I changed this to the following:
 
-```
+[source,bash]
+----
 ## Environment Variables
 
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
 PATH=$JAVA_HOME/bin/java:$PATH
 export PATH
-```
+----
 
 This allowed me to execute `mvn --version` and get the following output:
 
-```
+[source,bash]
+----
 mvn --version
 OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
 Apache Maven 3.2.2 (NON-CANONICAL_2014-06-19T11:19:24_mockbuild; 2014-06-19T21:19:24+10:00)
@@ -67,10 +73,12 @@ Java version: 1.8.0_31, vendor: Oracle Corporation
 Java home: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31-3.b13.fc21.x86_64/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "3.18.5-201.fc21.x86_64", arch: "amd64", family: "unix"
-```
+----
 
 This verifies that the basic Maven install works as expected.
 
-== Great. Now I Can Build the API Docs
+== Great: Now I Can Build the API Docs!
 
-Well. Colour me surprised. I am now able to continue on with what I wanted to do in the first place: download the RHQ project Git Repo, and build the API Docs.
+Well. Colour me surprised. 
+
+I am now able to continue on with what I wanted to do in the first place: download the RHQ project Git Repo, and build the API Docs.
