@@ -1,9 +1,0 @@
-
-= Test Post
-:published_at: 2010-01-01
-
-
-
-== Testing out HubPress
-
-This is a test post for HubPress. Test.
