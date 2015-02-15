@@ -3,18 +3,32 @@
  
 I had some old treated pine fence palings left over from when I replaced all the side gate palings. My wife suggested I use them to fix up the borders around the trees, so I took her advice and got it done over two weekends. 
 
+image::http://jaredmorgs.github.io/images/Tree_Border_Two.jpg[title="The Finished Product", width="300, height="500"]
+
 == Would You Use Wood That Would Cost You Nix?
 
 *I would*. Seriously, if you can get wood cheap or free, you take it and save some big cash. I could have gone and purchased some new wood from the hardware store, but that would have almost doubled the cost of the job. 
-
 
 The most time consuming part of the job was dressing off the old pine planks, and painting them. They were pretty rough and a mouse sander quickly took care of that. 
 
 NOTE: If you don't have a bunch of palings lying around like I did, you might want to go to your local reclamation yard. There might be some good quality timber you can use there.
 
+== Wood That Wasn't Free
+
+I did actually fork our for some new timber. The spacers required for the job were cut at the cutting station at Bunnings. 
+
+image::http://jaredmorgs.github.io/images/Tree_Border_Palings_Spacers.jpg[title="Spacers", width="300, height="500"]
+
+I have to say I could have probably done a better job myself regarding size consistency, but at 12 blocks to be cut, paying 50c a cut was worth it. And the size still worked OK, so not a problem.
+
 == Free Paint is Free, Except When You Run Out of Undercoat
 
-The paint colour was a water-based interior colour, courtesy of Masters North Lakes, after they gave Bounce North Lakes a whole stack of mistint tins. They couldn't accept them due to them not being non-toxic, so we saved this colour specifically for this job. Becasue this wasn't a standard fence paint, I needed to undercoat before painting with two top coats. This quite literally took all weekend last weekend. I _nearly_ had enough undercoat to get the job done, but I had to fork out about $25 for a new tin. Undercoat is a good thing to have around anyhow, so I wan't too worried.
+image::http://jaredmorgs.github.io/images/Tree_Border_Palings_Painted.jpg[title="Painted Slats", width="300, height="500"]
+
+The paint colour was a water-based interior colour, courtesy of Masters North Lakes, after they gave us a whole stack of mistint tins as part of a Sausage Sizzle Fundraiser we conducted. Our childs' Kindergarten couldn't accept them due to the paint not being non-toxic, so we saved this colour specifically for this job, and gave the other tin to them for minor touch-ups around the Kindy. 
+
+
+Becasue this wasn't a standard fence paint, I needed to undercoat before painting with two top coats. This quite literally took all weekend last weekend. I _nearly_ had enough undercoat to get the job done, but I had to fork out about $25 for a new tin. Undercoat is a good thing to have around anyhow, so I wan't too worried.
 
 == Measure Twice, Then Check The Fit, Then Cut
 
@@ -24,4 +38,4 @@ Even though I measured once, measured twice, I still had some issues with measur
 
 All in all, they've come up really nicely. All up, I spent about $100 including some tools I needed for the job. Most of the expense was for the plank of plywood I used to convert my glass-top office desk to a workbench. That paid dividends these two weekends for sure.
 
-image::http://jaredmorgs.github.io/images/Tree_Border_One.jpg[title="The Finished Product", width="300, height="500"]
+image::http://jaredmorgs.github.io/images/Tree_Border_Two.jpg[title="Being Frugal Pays", width="300, height="500"]
