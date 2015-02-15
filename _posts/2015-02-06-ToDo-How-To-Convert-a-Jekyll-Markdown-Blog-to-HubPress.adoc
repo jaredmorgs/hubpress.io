@@ -1,7 +1,5 @@
-
-= How To Convert a Jekyll Markdown Blog to HubPress
+= ToDo: How To Convert a Jekyll Markdown Blog to HubPress
 :hp-tags: HubPress, Markdown, AsciiDoc, Migration
-
 
 == Summary
 
