@@ -5,7 +5,7 @@
 
 == Stand Back: I'm Going to Use Maven
 
-These words were uttered from my mouth before going down the path of installing the Maven build system on Fedora 21. I knew it was going to be a trip, based on prior experience. I wasn't wrong...
+These words were uttered from my mouth before going down the path of installing the Maven build system on Fedora 21. I knew it was going to be a trip, based on prior experience. Strangely enough, I managed to get it working much quicker than I had first thought.
 
 == Install the Software
 
@@ -70,3 +70,7 @@ OS name: "linux", version: "3.18.5-201.fc21.x86_64", arch: "amd64", family: "uni
 ```
 
 This verifies that the basic Maven install works as expected.
+
+== Great. Now I Can Build the API Docs
+
+Well. Colour me surprised. I am now able to continue on with what I wanted to do in the first place: download the RHQ project Git Repo, and build the API Docs.
