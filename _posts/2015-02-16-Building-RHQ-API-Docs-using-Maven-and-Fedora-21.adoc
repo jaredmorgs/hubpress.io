@@ -1,5 +1,5 @@
 
-= Convincing Maven To Work On Fedora 21
+= Building RHQ API Docs using Maven and Fedora 21
 :hp-tags: Apache Maven, Fedora 21, .bashrc, JAVA_HOME
 :published_at: 2015-02-16
 
@@ -9,9 +9,11 @@ ____
 Stand Back: I'm Going To Use Maven
 ____
 
-Some might say these words are a dangerous statement to make.  I went down the prickly path of installing the Maven build system on Fedora 21. I knew it was going to be a trip, based on prior experience. Strangely enough, I managed to get it working much quicker than I had first thought. Here's what worked for me.
+Some might say these words are a dangerous statement to make.  I went down the path of installing the Maven build system on Fedora 21. Based on my prior experience, I thought it was going to be a trip. To my surprise and delight, I managed to get it working much quicker than I had first thought. 
 
-== Install the Software
+The second part of this the RHQ project (the upstream of Red Hat's JBoss Operations Network) made the build process 
+
+== Install Maven
 
 On Fedora, this is the easy part. 
 
@@ -19,7 +21,7 @@ On Fedora, this is the easy part.
 sudo yum install maven
 ```
 
-== Now The Fun Begins
+== Troubleshoot Maven
 
 === Check the JDK
 
@@ -81,8 +83,11 @@ OS name: "linux", version: "3.18.5-201.fc21.x86_64", arch: "amd64", family: "uni
 
 This verifies that the basic Maven install works as expected.
 
-== Great: Now I Can Build the API Docs!
+== Build the API Docs!
 
 Well. Colour me surprised. 
 
-I am now able to continue on with what I wanted to do in the first place: download the RHQ project Git Repo, and build the API Docs.
+I am now able to continue on with what I wanted to do in the first place: download the RHQ project Git Repo, and build the API Docs. Getting Maven installed and functioning is not nearly as hard as I remembered. Maybe that has a bit to do with my experience at Red Hat. Maybe it has a bit to do with improvements made to Maven over the years since I last used it.
+
+Tune in to the next episode for how that went...
+
