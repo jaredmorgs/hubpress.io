@@ -1,11 +1,14 @@
 
-= [Draft] Convincing Maven To Work On Fedora 21
-:published_at: 2008-01-01
+= Convincing Maven To Work On Fedora 21
+:hp-tags: Apache Maven, Fedora 21, .bashrc, JAVA_HOME
 
 
-== Stand Back: I'm Going to Use Maven
+[quote, @jaredmorgs]
+____
+Stand Back: I'm Going to Use Maven
+____
 
-These words were uttered from my mouth before going down the path of installing the Maven build system on Fedora 21. I knew it was going to be a trip, based on prior experience. Strangely enough, I managed to get it working much quicker than I had first thought.
+Some might say these words are a dangerous statement to make.  I went down the prickly path of installing the Maven build system on Fedora 21. I knew it was going to be a trip, based on prior experience. Strangely enough, I managed to get it working much quicker than I had first thought. Here's what worked for me.
 
 == Install the Software
 
