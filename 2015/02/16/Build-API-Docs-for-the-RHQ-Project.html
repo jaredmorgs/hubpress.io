@@ -4,28 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Build API Docs for the RHQ Project - The Musings of Jared Morgan (jaredmorgs)</title>
+    <title>Build API Docs for the RHQ Project</title>
+    <meta name="description" content="" />
 
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="">
+    <link rel="shortcut icon" href="http://jaredmorgs.github.io/themes/Roon/favicon.ico">
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Build API Docs for the RHQ Project">
-    <meta name="twitter:description" content="">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Build API Docs for the RHQ Project">
-    <meta property="og:description" content="">
-
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
-
-    <link rel="stylesheet" type="text/css" href="http://jaredmorgs.github.io/themes/uno/assets/css/uno.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
+    <link rel="stylesheet" type="text/css" href="http://jaredmorgs.github.io/themes/Roon/assets/css/screen.css?v=1.0.0" />
 
     <link rel="canonical" href="http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html" />
     
@@ -35,7 +23,7 @@
     <meta property="og:description" content="Granted, this blog post will only likely interest the following audience: Red Hat associates. Folks using the upstream RHQ project. Folks interested in techniques for generating API docs using Maven. The Terse Process The general process for building this project&amp;..." />
     <meta property="og:url" content="http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html" />
     <meta property="article:published_time" content="2015-02-15T14:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-02-16T02:42:37.996Z" />
+    <meta property="article:modified_time" content="2015-02-16T02:45:12.213Z" />
     <meta property="article:tag" content="Maven" />
     <meta property="article:tag" content="RHQ" />
     <meta property="article:tag" content="API Docs" />
@@ -60,7 +48,7 @@
     "headline": "Build API Docs for the RHQ Project",
     "url": "http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html",
     "datePublished": "2015-02-15T14:00:00.000Z",
-    "dateModified": "2015-02-16T02:42:37.996Z",
+    "dateModified": "2015-02-16T02:45:12.213Z",
     "keywords": "Maven,  RHQ,  API Docs",
     "description": "Granted, this blog post will only likely interest the following audience: Red Hat associates. Folks using the upstream RHQ project. Folks interested in techniques for generating API docs using Maven. The Terse Process The general process for building this project&amp;..."
 }
@@ -68,114 +56,21 @@
 
     <meta name="generator" content="Ghost ?" />
     <link rel="alternate" type="application/rss+xml" title="The Musings of Jared Morgan (jaredmorgs)" href="http://jaredmorgs.github.io/rss" />
-
 </head>
-<body class="post-template tag-undefined tag-undefined tag-undefined no-js">
+<body class="post-template tag-undefined tag-undefined tag-undefined  ">
 
-    <span class="mobile btn-mobile-menu">
-        <i class="icon icon-list btn-mobile-menu__icon"></i>
-        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-    </span>
+    
 
-    <header class="panel-cover panel-cover--collapsed " style="background-image: url(http://jaredmorgs.github.io/images/cover.jpg)">
-      <div class="panel-main">
-    
-        <div class="panel-main__inner panel-inverted">
-        <div class="panel-main__content">
-    
-            <a href="http://jaredmorgs.github.io" title="link to homepage for The Musings of Jared Morgan (jaredmorgs)"><img src="http://jaredmorgs.github.io/images/logo.jpg" width="80" alt="The Musings of Jared Morgan (jaredmorgs) logo" class="panel-cover__logo logo" /></a>
-            <h1 class="panel-cover__title panel-title"><a href="http://jaredmorgs.github.io" title="link to homepage for The Musings of Jared Morgan (jaredmorgs)">The Musings of Jared Morgan (jaredmorgs)</a></h1>
-            <hr class="panel-cover__divider" />
-            <p class="panel-cover__description">for Android, Pinball, and other interesting topics.</p>
-            <hr class="panel-cover__divider panel-cover__divider--secondary" />
-    
-            <div class="navigation-wrapper">
-    
-              <nav class="cover-navigation cover-navigation--primary">
-                <ul class="navigation">
-                  <li class="navigation__item"><a href="/#blog" title="link to The Musings of Jared Morgan (jaredmorgs) blog" class="blog-button">Blog</a></li>
-                </ul>
-              </nav>
-    
-              
-              
-              <nav class="cover-navigation navigation--social">
-                <ul class="navigation">
-              
-              
-                  <!-- Twitter -->
-                  <li class="navigation__item">
-                    <a href="https://twitter.com/jaredmorgs" title="Twitter account">
-                      <i class='icon icon-social-twitter'></i>
-                      <span class="label">Twitter</span>
-                    </a>
-                  </li>
-              
-                  <!-- Google Plus -->
-                  <li class="navigation__item">
-                    <a href="https://plus.google.com/+JaredMorgan_jaredmorgs/reviews/p/pub" title="Google+ account">
-                      <i class='icon icon-social-google-plus'></i>
-                      <span class="label">Google-plus</span>
-                    </a>
-                  </li>
-              
-                  <!-- Github -->
-                  <li class="navigation__item">
-                    <a href="https://github.com/jaredmorgs/" title="Github account">
-                      <i class='icon icon-social-github'></i>
-                      <span class="label">Github</span>
-                    </a>
-                  </li>
-                  </li>
-              
-              
-              
-              
-                  <!-- LinkedIn -->
-                  <li class="navigation__item">
-                    <a href="https://www.linkedin.com/in/jaredmorgs" title="LinkedIn account">
-                      <i class='icon icon-social-linkedin'></i>
-                      <span class="label">LinkedIn</span>
-                    </a>
-                  </li>
-              
-                  <!-- Email -->
-                  <li class="navigation__item">
-                    <a href="mailto:jaredleonmorgan@gmail.com" title="Email jaredleonmorgan@gmail.com">
-                      <i class='icon icon-mail'></i>
-                      <span class="label">Email</span>
-                    </a>
-                  </li>
-              
-                </ul>
-              </nav>
-              
-    
-            </div>
-    
-          </div>
-    
-        </div>
-    
-        <div class="panel-cover--overlay"></div>
-      </div>
-    </header>
-    <div class="content-wrapper">
-        <div class="content-wrapper__inner">
-            
 
-  <article class="post-container post-container--single">
+    <article role="main" class="">
+        <header>
+            <a href="http://jaredmorgs.github.io" id="home_link">«</a>
+            <div class="meta"><time datetime="2015-02-16"><a href="/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html">February 16, 2015</a></time> <span class="count" id="js-reading-time"></span></div>
+            <h1>Build API Docs for the RHQ Project</h1>
+        </header>
 
-    <header class="post-header">
-      <div class="post-meta">
-        <time datetime="16 Feb 2015" class="post-meta__date date">16 Feb 2015</time> &#8226; <span class="post-meta__tags tags">on <a href="http://jaredmorgs.github.io/tag/Maven">Maven</a>, <a href="http://jaredmorgs.github.io/tag/ RHQ"> RHQ</a>, <a href="http://jaredmorgs.github.io/tag/ API Docs"> API Docs</a></span>
-        <span class="post-meta__author author"><img src="https://avatars.githubusercontent.com/u/952793?v=3" alt="profile image for Jared Morgan" class="avatar post-meta__avatar" /> by Jared Morgan</span>
-      </div>
-      <h1 class="post-title">Build API Docs for the RHQ Project</h1>
-    </header>
-
-    <section class="post tag-undefined tag-undefined tag-undefined">
-      <div id="preamble">
+        <div class="text" id="js-post-content">
+            <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Granted, this blog post will only likely interest the following audience:</p>
@@ -362,41 +257,135 @@ Downloaded: http://repo.maven.apache.org/maven2/org/testng/testng/6.5.2/testng-6
 </div>
 </div>
 </div>
+        </div>
+
+        <menu>
+            <a href="" id="btn_share" class="btn" title="Share">
+                <span aria-hidden="true" data-icon="S"></span>
+                <strong>Share</strong>
+            </a>
+            <a href="http://twitter.com/share?text=Build%20API%20Docs%20for%20the%20RHQ%20Project&url=http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
+                <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+            </a>
+        </menu>
+
+
+        <footer class="post-footer" role="contentinfo">
+
+            <div class="vcard">
+                <a href="http://jaredmorgs.github.io/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                    <span aria-hidden="true" data-icon=")"></span>
+                    <strong>Feed</strong>
+                </a>
+
+                <a href="" class="photo">
+                    <span style="background-image: url('https://avatars.githubusercontent.com/u/952793?v=3');">
+                        <img src="https://avatars.githubusercontent.com/u/952793?v=3" alt="Jared Morgan">
+                    </span>
+                </a>
+
+                <div class="details">
+                    <h4><a href="" class="url n">Jared Morgan</a></h4>
+                    Brisbane, Australia.<br>
+                    <a href="http://jaredmorgs.github.io" class="js-remove-domain-schema">http://jaredmorgs.github.io</a>
+                </div>
+            </div>
+
+            <div id="user_bio">
+                <div class="inner">
+                    
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+    <section class="post-comments">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+      var disqus_shortname = 'jaredmorgs'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </section>
 
-  </article>
 
-  
-  <section class="post-comments">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'jaredmorgs'; // required: replace example with your forum shortname
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </section>
-  
+    </article>
 
+    <div id="share_modal">
+        <div class="wrap">
+            <div class="inner">
+                <header>
+                    Share
+                    <a href="" class="close" title="Close">&times;</a>
+                </header>
 
+                <div class="roon-share-links">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-            <footer class="footer">
-                <span class="footer__copyright">&copy; 2015. All rights reserved.</span>
-                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
-                <span class="footer__copyright">Proudly published with <a href="http://hubpress.io" title="link to Hubpress website">Hubpress</a></span>
-            </footer>
+                    <div id="fb-elems">
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=463438580397968";
+                        fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div>
+                    </div>
+
+                    <div id="pinit-btn">
+                        <a href="//pinterest.com/pin/create/button/?url=http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html&amp;description=Build%20API%20Docs%20for%20the%20RHQ%20Project-The%20Musings%20of%20Jared%20Morgan%20(jaredmorgs) " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
+                        <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+
+
+
+        <a href="http://jaredmorgs.github.io" id="blog_badge">
+            <span style="background-image: url('http://jaredmorgs.github.io/images/logo.jpg');">The Musings of Jared Morgan (jaredmorgs)</span>
+        </a>
+
+
+    <script>
+
+
+        function no_schema_links () {
+            var links = document.querySelectorAll('.js-remove-domain-schema');
+            if (links) {
+                for (i = 0; i < links.length; ++i) {
+                    var link = links[i],
+                        text = link.innerHTML,
+                        no_schema = text.replace(/.*?:\/\//g, "");
+                    link.innerHTML = no_schema;
+                }
+            }
+        }
+
+        window.onload = function () {
+            no_schema_links();
+
+        }
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
 
-    <script type="text/javascript" src="http://jaredmorgs.github.io/themes/uno/assets/js/main.js?v=1.0.0"></script>
-    
+
+
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
