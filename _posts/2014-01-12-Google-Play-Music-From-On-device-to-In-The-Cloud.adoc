@@ -1,5 +1,6 @@
 = Google Play Music: From On-device to In The Cloud
 :hp-tags: Google Play Music, Use Case 
+:hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/android.jpg
 
 == Updated Info
 
@@ -75,4 +76,4 @@ I want to keep up-to-date with my favourite artists but don't have the time to r
 
 A quick search of your favourite artist reveals all the albums they have for sale on Play Music, including the albums you have purchased or uploaded. You can instantly see gaps in your collection, and fill them instantly with an online album purchase. Legally. And with the preview track feature on the albums, you can always have a listen to the track to see if more recent albums by your favourite artist haven't gone all avant-garde and hipster and no longer interest you.
 
-If you use Google Plus, you can also listen to albums in full when your G+ contacts share an album purchase in their stream. This is an interesting way of exposing yourself to new music. 
+If you use Google Plus, you can also listen to albums in full when your G+ contacts share an album purchase in their stream. This is an interesting way of exposing yourself to new music.
