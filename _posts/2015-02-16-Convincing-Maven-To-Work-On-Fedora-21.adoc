@@ -1,6 +1,7 @@
 
 = Convincing Maven To Work On Fedora 21
 :hp-tags: Apache Maven, Fedora 21, .bashrc, JAVA_HOME
+:published_at: 2015-02-16
 
 
 [quote, @jaredmorgs]
