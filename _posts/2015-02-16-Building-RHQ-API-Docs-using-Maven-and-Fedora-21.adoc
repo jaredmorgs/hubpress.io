@@ -11,7 +11,7 @@ ____
 
 Some might say these words are a dangerous statement to make.  I went down the path of installing the Maven build system on Fedora 21. Based on my prior experience, I thought it was going to be a trip. To my surprise and delight, I managed to get it working much quicker than I had first thought. 
 
-The second part of this the RHQ project (the upstream of Red Hat's JBoss Operations Network) made the build process 
+The second installment of my Maven journey wasn't as smooth as I would have liked. But as you'll read, there is progress being made.
 
 == Install Maven
 
