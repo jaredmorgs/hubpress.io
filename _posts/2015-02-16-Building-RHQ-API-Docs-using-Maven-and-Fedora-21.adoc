@@ -89,5 +89,5 @@ Well. Colour me surprised.
 
 I am now able to continue on with what I wanted to do in the first place: download the RHQ project Git Repo, and build the API Docs. Getting Maven installed and functioning is not nearly as hard as I remembered. Maybe that has a bit to do with my experience at Red Hat. Maybe it has a bit to do with improvements made to Maven over the years since I last used it.
 
-Tune in to the next episode for how that went...
+Tune in to the http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html[next episode] for how that went...
 
