@@ -15,7 +15,7 @@ The second installment of my Maven journey wasn't as smooth as I would have like
 
 == Install Maven
 
-Maven is a build system that practically all JBoss Products use in the upstream.
+http://maven.apache.org/download.cgi[Maven] is a build system that practically all JBoss Products use in the upstream.
 
 The great thing is that it's easy to install on Fedora. 
 
