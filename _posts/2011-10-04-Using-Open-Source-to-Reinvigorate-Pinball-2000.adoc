@@ -1,5 +1,6 @@
 = Using Open Source to Reinvigorate Pinball 2000 
 :published_at: 2011-10-04
+:hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg
 :hp-tags: Pinball 2000, nucore, Open Source, Linux, Big Guys Pinball, Pin2K 
 
 I remember when I was restoring pinball machines that I learned a very important lesson about computer repair. I accidentally caused mainboard damage to a http://en.wikipedia.org/wiki/Pinball_2000[Pinball 2000] (Pin2K) game: http://www.ipdb.org/search.pl?any=star+wars&search=Search+Database&searchtype=quick#4458[Star Wars: Episode 1].  It is very easy to do, because the two Molex connectors from the ATX power supply were not http://en.wikipedia.org/wiki/Electrical_connector#Keying[keyed], and you could reverse the ground for power. I did this, and took out the power circuit on the mainboard.
