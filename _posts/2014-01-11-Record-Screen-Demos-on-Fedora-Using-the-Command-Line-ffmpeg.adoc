@@ -1,5 +1,6 @@
 = Record Screen Demos on Fedora Using the Command Line (ffmpeg) 
 :hp-tags: Screencast, ffmpeg, fedora 
+:hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg
 :published_at: 2014-01-11
 :toc:
 
@@ -23,6 +24,7 @@ Rather than doing what we always do, and blindly copy pasta a command and run it
 ```
 ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0+0,0 -f alsa -i plughw:1,0 -acodec libmp3lame -ar 48000 -ab 320k -vcodec libx264 Desktop_Recording.mp4
 ```
+
 To stop the recording, press `Ctrl+C` in the terminal.
 
 === What does all that mean?
