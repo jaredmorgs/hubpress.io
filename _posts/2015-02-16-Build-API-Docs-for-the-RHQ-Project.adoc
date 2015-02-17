@@ -17,7 +17,7 @@ There are two parts to this post:
 
 == The Original Process
 
-The original process I was told to run was:
+The original process was:
 
 . `$ yum install maven`
 . `$ git clone https://github.com/rhq-project/rhq.git jon`
@@ -55,9 +55,11 @@ Downloaded: http://repo.maven.apache.org/maven2/org/testng/testng/6.5.2/testng-6
 
 I can't really complain about this though: the first time you build a Maven project, you can expect it to take a long time as it downloads the required dependencies.
 
-The issue now is that I need to build the required dependencies myself before the DocGen tool can work.
+The error at this stage suggests I need to build the required dependencies myself before the DocGen tool will work.
 
-=== Second Attempt: Build Deps
+No worries!
+
+=== Second Attempt: Build Deps?
 
 Luckily the folks in the RHQ project have made dependency building as simple as possible. 
 
@@ -71,7 +73,9 @@ The script and the resulting process completed successfully, and I thought I was
 
 Not. So. Fast.
 
-=== Third Attempt: Run DogGen at Project Root
+=== Third Attempt: Run DogGen at Project Root?
+
+I ran `$ mvn -Ddocgen install` and got this result.
 
 [source,bash]
 ----
@@ -95,15 +99,15 @@ Not. So. Fast.
 [WARNING] The POM for org.rhq:rhq-core-domain:jar:tests:4.14.0-SNAPSHOT is missing, no dependency information available
 ----
 
-Still no bueno with DocGen.
+Still no bueno with DocGen. :(
 
-At this point, I hit a dead end. 
+At this point, I hit a dead end. And when I hit a dead end, I start doing _questionable_ things in hope that I can resolve the issue. 
 
 I thought perhaps the following step was wrong: 
 
 	4) `$ cd modules/enterprise/server/jar`
 
-Perhaps I needed to execute `$ mvn -Ddocgen install` at the project root?
+I though to myself "Perhaps I need to execute `$ mvn -Ddocgen install` at the project root?"
 
 I executed the command at project root and things certainly looked promising. Maven began downloading a whole stack of dependencies that related to the platform. But as a Maven n00b, I learned after 11 minutes that this was a false sense of security. By executing the DocGen command at the project root, maven took the configuration in the root pom.xml file and began compiling the *entire project*. 
 
@@ -114,24 +118,26 @@ ____
 Build only what you need, at the level you need.
 ____
 
-Good advice for sure.
+Sagely advice for sure.
 
-=== Fourth Attempt: Check out the Branch, yo!
+=== Fourth Attempt: Branch Not Master!
 
-After contacting the RHQ team, it was pointed out to me that I needed to run DocGen on a branch and not the master. And I was also informed that I could cut down the build time by specifying `-DskipTests` and possibly `-Dmaven.test.skip`.
+After contacting the RHQ team (overnight - very quick response), they could see that I was running these commands against `master`. It turns out I needed to run DocGen on a branch and not master. They also gave me the tip that I could cut down the build time by specifying `-DskipTests` and possibly `-Dmaven.test.skip`
 
-Based on this feedback, I assumed the updated steps to run were:
+Based on this feedback, I hypothesised the updated steps to be:
 
 . `$ yum install maven`
 . `$ git clone https://github.com/rhq-project/rhq.git jon`
 . `$ cd jon`
-. `$ git checkout -b release/_[latest_branch]_
+. `$ git checkout -b release/_[latest_branch]_`
 . `$ cd modules/enterprise/server/jar`
 . `$ mvn -Ddocgen compile -DskipTests -Dmaven.test.skip` (initially, then for subsequent builds)
 . `$ mvn -Ddocgen install -DskipTests -Dmaven.test.skip`  
 
 
-Regrettably, this updated process did not resolve the issue. I ran the compile command first, which failed. I then, out of desperation, ran the install command. It produced the same result:
+Still no bueno with DocGen. :(
+
+I ran the compile command first, which failed. I then, out of desperation, ran the install command. It produced the same result:
 
 [source,bash]
 ----
@@ -181,5 +187,9 @@ Failure to find org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT in https://oss.s
 We're getting there, but there is still quite a path to traverse down before I can comfortably say "generating RHQ API docs is easy".
 
 The https://bugzilla.redhat.com/show_bug.cgi?id=1192869[BugZilla Bug] I raised to capture these challenges will hopefully help the engineers with resolving the issue for me, and for users of the project.
+
+And what's even better is that I'll be able to update the generation procedures for API documentation for the next time I need to pull the docs out. 
+
+I don't consider this wasted time: just a new learning experience. I'm just glad the RHQ devs are a patient lot. 
 
 
