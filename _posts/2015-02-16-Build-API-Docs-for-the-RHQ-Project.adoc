@@ -2,6 +2,7 @@
 :hp-tags: Maven, RHQ, API Docs
 :hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg
 :published_at: 2015-02-16
+:source-highlighter: highlightjs
 
 Granted, this blog post will only likely interest the following audience:
 
@@ -9,9 +10,14 @@ Granted, this blog post will only likely interest the following audience:
 * Folks using the upstream RHQ project. 
 * Folks interested in techniques for generating API docs using Maven.
 
-== The Terse Process
+There are two parts to this post:
 
-The general process for building this project's API docs is:
+* The Original Process
+* The Actual Process
+
+== The Original Process
+
+The original process I was told to run was:
 
 . `$ yum install maven`
 . `$ git clone https://github.com/rhq-project/rhq.git jon`
@@ -110,12 +116,70 @@ ____
 
 Good advice for sure.
 
-== The End Result
+=== Fourth Attempt: Check out the Branch, yo!
 
-The Bad News::
-Well, I have hit a dead end. I'm not able to generate the API Docs at the moment.
-    
-The Good News::
-I work with the RHQ team at Red Hat, as part of my job as the Docs Writer for the product docs. To ensure other users don't have the same issues with building the RHQ project as I did, I created https://bugzilla.redhat.com/show_bug.cgi?id=1192869 to start discussing ways the missing dependencies can be packaged in the Maven build.
+After contacting the RHQ team, it was pointed out to me that I needed to run DocGen on a branch and not the master. And I was also informed that I could cut down the build time by specifying `-DskipTests` and possibly `-Dmaven.test.skip`.
 
-To Be Continued...
+Based on this feedback, I assumed the updated steps to run were:
+
+. `$ yum install maven`
+. `$ git clone https://github.com/rhq-project/rhq.git jon`
+. `$ cd jon`
+. `$ git checkout -b release/_[latest_branch]_
+. `$ cd modules/enterprise/server/jar`
+. `$ mvn -Ddocgen compile -DskipTests -Dmaven.test.skip` (initially, then for subsequent builds)
+. `$ mvn -Ddocgen install -DskipTests -Dmaven.test.skip`  
+
+
+Regrettably, this updated process did not resolve the issue. I ran the compile command first, which failed. I then, out of desperation, ran the install command. It produced the same result:
+
+[source,bash]
+----
+[jmorgan@jmorgan-bne-redhat-com jar] (release/jon3.3.x) $ mvn -Ddocgen compile -DskipTests -Dmaven.test.skip
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RHQ Enterprise Server JAR 4.14.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-enterprise-server-xml-schemas:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-core-domain:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-core-plugin-api:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-core-client-api:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-core-dbutils:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:safe-invoker:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-common-drift:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-server-metrics:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-jboss-as-dmr-client:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq.helpers:rest-docs-generator:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.557 s
+[INFO] Finished at: 2015-02-17T10:32:18+10:00
+[INFO] Final Memory: 18M/437M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project rhq-enterprise-server: Could not resolve dependencies for project org.rhq:rhq-enterprise-server:ejb:4.14.0-SNAPSHOT: The following artifacts could not be resolved: 
+org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT, 
+org.rhq:rhq-enterprise-server-xml-schemas:jar:4.14.0-SNAPSHOT, 
+org.rhq:rhq-core-domain:jar:4.14.0-SNAPSHOT, 
+org.rhq:rhq-core-plugin-api:jar:4.14.0-SNAPSHOT, 
+org.rhq:rhq-core-client-api:jar:4.14.0-SNAPSHOT, 
+org.rhq:rhq-core-dbutils:jar:4.14.0-SNAPSHOT, 
+org.rhq:safe-invoker:jar:4.14.0-SNAPSHOT, 
+org.rhq:rhq-common-drift:jar:4.14.0-SNAPSHOT, 
+org.rhq:rhq-server-metrics:jar:4.14.0-SNAPSHOT, 
+org.rhq:rhq-jboss-as-dmr-client:jar:4.14.0-SNAPSHOT, 
+org.rhq.helpers:rest-docs-generator:jar:4.14.0-SNAPSHOT: 
+Failure to find org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT in https://oss.sonatype.org/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-snapshots has elapsed or updates are forced -> [Help 1]
+[ERROR]
+----
+
+== The Actual (and correct) Process
+
+We're getting there, but there is still quite a path to traverse down before I can comfortably say "generating RHQ API docs is easy".
+
+The https://bugzilla.redhat.com/show_bug.cgi?id=1192869[BugZilla Bug] I raised to capture these challenges will hopefully help the engineers with resolving the issue for me, and for users of the project.
+
+
