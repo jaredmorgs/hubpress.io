@@ -19,18 +19,20 @@
     <meta property="og:site_name" content="The Musings of Jared Morgan (jaredmorgs)" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Build API Docs for the RHQ Project" />
-    <meta property="og:description" content="Granted, this blog post will only likely interest the following audience: Red Hat associates. Folks using the upstream RHQ project. Folks interested in techniques for generating API docs using Maven. The Terse Process The general process for building this project&amp;..." />
+    <meta property="og:description" content="Granted, this blog post will only likely interest the following audience: Red Hat associates. Folks using the upstream RHQ project. Folks interested in techniques for generating API docs using Maven. There are two parts to this post: The Original Process..." />
     <meta property="og:url" content="http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html" />
+    <meta property="og:image" content="http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg" />
     <meta property="article:published_time" content="2015-02-15T14:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-02-16T10:24:33.757Z" />
+    <meta property="article:modified_time" content="2015-02-17T04:04:41.941Z" />
     <meta property="article:tag" content="Maven" />
     <meta property="article:tag" content="RHQ" />
     <meta property="article:tag" content="API Docs" />
     
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Build API Docs for the RHQ Project" />
-    <meta name="twitter:description" content="Granted, this blog post will only likely interest the following audience: Red Hat associates. Folks using the upstream RHQ project. Folks interested in techniques for generating API docs using Maven. The Terse Process The general process for building this project&amp;..." />
+    <meta name="twitter:description" content="Granted, this blog post will only likely interest the following audience: Red Hat associates. Folks using the upstream RHQ project. Folks interested in techniques for generating API docs using Maven. There are two parts to this post: The Original Process..." />
     <meta name="twitter:url" content="http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html" />
+    <meta name="twitter:image:src" content="http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg" />
     
     <script type="application/ld+json">
 {
@@ -47,9 +49,10 @@
     "headline": "Build API Docs for the RHQ Project",
     "url": "http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html",
     "datePublished": "2015-02-15T14:00:00.000Z",
-    "dateModified": "2015-02-16T10:24:33.757Z",
+    "dateModified": "2015-02-17T04:04:41.941Z",
+    "image": "http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg",
     "keywords": "Maven,  RHQ,  API Docs",
-    "description": "Granted, this blog post will only likely interest the following audience: Red Hat associates. Folks using the upstream RHQ project. Folks interested in techniques for generating API docs using Maven. The Terse Process The general process for building this project&amp;..."
+    "description": "Granted, this blog post will only likely interest the following audience: Red Hat associates. Folks using the upstream RHQ project. Folks interested in techniques for generating API docs using Maven. There are two parts to this post: The Original Process..."
 }
     </script>
 
@@ -57,11 +60,11 @@
     <link rel="alternate" type="application/rss+xml" title="The Musings of Jared Morgan (jaredmorgs)" href="http://jaredmorgs.github.io/rss" />
 </head>
 <body class="post-template tag-undefined tag-undefined tag-undefined">
-    <header id="header" class="animated fadeIn">
+    <header id="header" class="animated fadeIn" style="background-image: url(http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg)">
     <div class="header-background">
     <section class="blog-content">
         <a id="site-url" class="blog-title" href="http://jaredmorgs.github.io">The Musings of Jared Morgan (jaredmorgs)</a>
-        <span class="blog-description">for Android, Pinball, and other interesting topics. </span>
+        <span class="blog-description">for Android, Pinball, Open Source, and other interesting topics. </span>
         <nav class="links fadeIn animated">
             <ul>
                 <!-- <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li> -->
@@ -71,7 +74,7 @@
     </section>
     <section class="header-content">
         <h1 class="post-title animated fadeInUp">Build API Docs for the RHQ Project</h1>
-        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1424008800" datetime="2015-02-16T00:00" title="16 February 2015">20 hours ago</time></span>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1424008800" datetime="2015-02-16T00:00" title="16 February 2015">2 days ago</time></span>
             <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="http://jaredmorgs.github.io/tag/Maven">Maven</a>, <a href="http://jaredmorgs.github.io/tag/ RHQ"> RHQ</a>, <a href="http://jaredmorgs.github.io/tag/ API Docs"> API Docs</a></span>
             <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="">Jared Morgan</a></span></span>
     </section>
@@ -98,13 +101,26 @@
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>There are two parts to this post:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The Original Process</p>
+</li>
+<li>
+<p>The Actual Process</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_the_terse_process">The Terse Process</h2>
+<h2 id="_the_original_process">The Original Process</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The general process for building this project&#8217;s API docs is:</p>
+<p>The original process I was told to run was:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -138,7 +154,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">Downloaded: http://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar (1461 KB at 76.0 KB/sec)
+<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">Downloaded: http://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar (1461 KB at 76.0 KB/sec)
 Downloaded: http://repo.maven.apache.org/maven2/org/testng/testng/6.5.2/testng-6.5.2.jar (701 KB at 36.4 KB/sec)
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
@@ -188,7 +204,7 @@ Downloaded: http://repo.maven.apache.org/maven2/org/testng/testng/6.5.2/testng-6
 <h3 id="_third_attempt_run_doggen_at_project_root">Third Attempt: Run DogGen at Project Root</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">[INFO] ------------------------------------------------------------------------
+<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">[INFO] ------------------------------------------------------------------------
 [INFO] Building RHQ Enterprise Server JAR 4.14.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [WARNING] The POM for org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT is missing, no dependency information available
@@ -245,25 +261,96 @@ Downloaded: http://repo.maven.apache.org/maven2/org/testng/testng/6.5.2/testng-6
 <p>Good advice for sure.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_fourth_attempt_check_out_the_branch_yo">Fourth Attempt: Check out the Branch, yo!</h3>
+<div class="paragraph">
+<p>After contacting the RHQ team, it was pointed out to me that I needed to run DocGen on a branch and not the master. And I was also informed that I could cut down the build time by specifying <code>-DskipTests</code> and possibly <code>-Dmaven.test.skip</code>.</p>
+</div>
+<div class="paragraph">
+<p>Based on this feedback, I assumed the updated steps to run were:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>$ yum install maven</code></p>
+</li>
+<li>
+<p><code>$ git clone <a href="https://github.com/rhq-project/rhq.git" class="bare">https://github.com/rhq-project/rhq.git</a> jon</code></p>
+</li>
+<li>
+<p><code>$ cd jon</code></p>
+</li>
+<li>
+<p>`$ git checkout -b release/<em>[latest_branch]</em></p>
+</li>
+<li>
+<p><code>$ cd modules/enterprise/server/jar</code></p>
+</li>
+<li>
+<p><code>$ mvn -Ddocgen compile -DskipTests -Dmaven.test.skip</code> (initially, then for subsequent builds)</p>
+</li>
+<li>
+<p><code>$ mvn -Ddocgen install -DskipTests -Dmaven.test.skip</code></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Regrettably, this updated process did not resolve the issue. I ran the compile command first, which failed. I then, out of desperation, ran the install command. It produced the same result:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">[jmorgan@jmorgan-bne-redhat-com jar] (release/jon3.3.x) $ mvn -Ddocgen compile -DskipTests -Dmaven.test.skip
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RHQ Enterprise Server JAR 4.14.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-enterprise-server-xml-schemas:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-core-domain:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-core-plugin-api:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-core-client-api:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-core-dbutils:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:safe-invoker:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-common-drift:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-server-metrics:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq:rhq-jboss-as-dmr-client:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.rhq.helpers:rest-docs-generator:jar:4.14.0-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.557 s
+[INFO] Finished at: 2015-02-17T10:32:18+10:00
+[INFO] Final Memory: 18M/437M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project rhq-enterprise-server: Could not resolve dependencies for project org.rhq:rhq-enterprise-server:ejb:4.14.0-SNAPSHOT: The following artifacts could not be resolved:
+org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT,
+org.rhq:rhq-enterprise-server-xml-schemas:jar:4.14.0-SNAPSHOT,
+org.rhq:rhq-core-domain:jar:4.14.0-SNAPSHOT,
+org.rhq:rhq-core-plugin-api:jar:4.14.0-SNAPSHOT,
+org.rhq:rhq-core-client-api:jar:4.14.0-SNAPSHOT,
+org.rhq:rhq-core-dbutils:jar:4.14.0-SNAPSHOT,
+org.rhq:safe-invoker:jar:4.14.0-SNAPSHOT,
+org.rhq:rhq-common-drift:jar:4.14.0-SNAPSHOT,
+org.rhq:rhq-server-metrics:jar:4.14.0-SNAPSHOT,
+org.rhq:rhq-jboss-as-dmr-client:jar:4.14.0-SNAPSHOT,
+org.rhq.helpers:rest-docs-generator:jar:4.14.0-SNAPSHOT:
+Failure to find org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT in https://oss.sonatype.org/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of sonatype-snapshots has elapsed or updates are forced -&gt; [Help 1]
+[ERROR]</code></pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_the_end_result">The End Result</h2>
+<h2 id="_the_actual_and_correct_process">The Actual (and correct) Process</h2>
 <div class="sectionbody">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">The Bad News</dt>
-<dd>
-<p>Well, I have hit a dead end. I&#8217;m not able to generate the API Docs at the moment.</p>
-</dd>
-<dt class="hdlist1">The Good News</dt>
-<dd>
-<p>I work with the RHQ team at Red Hat, as part of my job as the Docs Writer for the product docs. To ensure other users don&#8217;t have the same issues with building the RHQ project as I did, I created <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1192869" class="bare">https://bugzilla.redhat.com/show_bug.cgi?id=1192869</a> to start discussing ways the missing dependencies can be packaged in the Maven build.</p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>We&#8217;re getting there, but there is still quite a path to traverse down before I can comfortably say "generating RHQ API docs is easy".</p>
 </div>
 <div class="paragraph">
-<p>To Be Continued&#8230;&#8203;</p>
+<p>The <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1192869">BugZilla Bug</a> I raised to capture these challenges will hopefully help the engineers with resolving the issue for me, and for users of the project.</p>
 </div>
 </div>
 </div>

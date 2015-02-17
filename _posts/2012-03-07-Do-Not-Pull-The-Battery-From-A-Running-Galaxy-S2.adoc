@@ -1,6 +1,7 @@
 = Do Not Pull The Battery From A Running Galaxy S2
 :published_at: 2012-03-07 
-:hp-tags: Pull Battery, Infinite Loop Force Close, Force Close Message on Boot, SGS2, SGSII
+:hp-tags: Pull Battery, Infinite Loop Force Close, Force Close Message on Boot, SGS2, SGSII, Android
+:hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/android.jpg
 
 == Background 
 
