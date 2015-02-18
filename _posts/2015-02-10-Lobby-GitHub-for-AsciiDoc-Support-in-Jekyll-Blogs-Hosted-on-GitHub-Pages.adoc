@@ -1,6 +1,6 @@
 = Lobby GitHub for AsciiDoc Support in Jekyll Blogs Hosted on GitHub Pages
 :hp-tags: AsciiDoctor, GitHub Pages, jekyll-asciidoc, Jekyll Blogs
-:hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg
+:hp-image: http://jaredmorgs.github.io/images/covers/open_source.jpg
 :published-at: 2015-01-20
 
 == tl: dr
