@@ -1,6 +1,6 @@
 = Google Play Music: From On-device to In The Cloud
 :hp-tags: Google Play Music, Use Case, Android 
-:hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/android.jpg
+:hp-image: http://jaredmorgs.github.io/images/covers/android.jpg
 
 == Updated Info
 
