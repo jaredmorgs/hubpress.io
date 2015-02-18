@@ -1,6 +1,6 @@
 = Poetic Revolution Case for the NVidia Shield Tablet (All Variants)
 :hp-tags: Poetic, Revolution, Tablet Cases, NVidia Shield
-:hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/android.jpg
+:hp-image: http://jaredmorgs.github.io/images/covers/android.jpg
 
 I've been waiting for Poetic to release a good protection solution for the NVidia Shield Tablet, and they have done a pretty good job with the Poetic Revolution case. There are some small issues with the case, but overall it is definitely the most rugged case offering I've seen on the market at the time of writing.
 
