@@ -23,7 +23,7 @@
     <meta property="og:url" content="http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html" />
     <meta property="og:image" content="http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg" />
     <meta property="article:published_time" content="2015-02-15T14:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-02-17T06:54:36.247Z" />
+    <meta property="article:modified_time" content="2015-02-18T06:20:04.014Z" />
     <meta property="article:tag" content="Maven" />
     <meta property="article:tag" content="RHQ" />
     <meta property="article:tag" content="API Docs" />
@@ -49,7 +49,7 @@
     "headline": "Build API Docs for the RHQ Project",
     "url": "http://jaredmorgs.github.io/2015/02/16/Build-API-Docs-for-the-RHQ-Project.html",
     "datePublished": "2015-02-15T14:00:00.000Z",
-    "dateModified": "2015-02-17T06:54:36.247Z",
+    "dateModified": "2015-02-18T06:20:04.014Z",
     "image": "http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg",
     "keywords": "Maven,  RHQ,  API Docs",
     "description": "Granted, this blog post will only likely interest the following audience: Red Hat associates. Folks using the upstream RHQ project. Folks interested in techniques for generating API docs using Maven. There are two parts to this post: The Original Process..."
@@ -74,7 +74,7 @@
     </section>
     <section class="header-content">
         <h1 class="post-title animated fadeInUp">Build API Docs for the RHQ Project</h1>
-        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1424008800" datetime="2015-02-16T00:00" title="16 February 2015">2 days ago</time></span>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1424008800" datetime="2015-02-16T00:00" title="16 February 2015">3 days ago</time></span>
             <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="http://jaredmorgs.github.io/tag/Maven">Maven</a>, <a href="http://jaredmorgs.github.io/tag/ RHQ"> RHQ</a>, <a href="http://jaredmorgs.github.io/tag/ API Docs"> API Docs</a></span>
             <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="">Jared Morgan</a></span></span>
     </section>
@@ -108,9 +108,26 @@
 <ul>
 <li>
 <p>The Original Process</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This covers the steps I took to build RHQ in a hope that others will benefit from it.</p>
+</li>
+<li>
+<p>Some interesting take-aways about what happens when you forget to provide pre-requisite content in a procedure.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>The Actual Process</p>
+<div class="ulist">
+<ul>
+<li>
+<p>When we get to this point, I&#8217;ll put the actual procedure you need to follow to produce the API docs.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -142,7 +159,7 @@
 </ol>
 </div>
 <div class="paragraph">
-<p>But as I found out, there is a little more to it than that.</p>
+<p>But after five attempts lasting over three days, I now know this is misleading to say the least.</p>
 </div>
 <div class="sect2">
 <h3 id="_first_attempt_no_success">First Attempt: No Success</h3>
@@ -154,7 +171,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">Downloaded: http://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar (1461 KB at 76.0 KB/sec)
+<pre class="highlight"><code class="language-bash" data-lang="bash">Downloaded: http://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar (1461 KB at 76.0 KB/sec)
 Downloaded: http://repo.maven.apache.org/maven2/org/testng/testng/6.5.2/testng-6.5.2.jar (701 KB at 36.4 KB/sec)
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
@@ -202,6 +219,9 @@ Downloaded: http://repo.maven.apache.org/maven2/org/testng/testng/6.5.2/testng-6
 <div class="paragraph">
 <p>Not. So. Fast.</p>
 </div>
+<div class="paragraph">
+<p>It turns out that this script builds the Cassandra dependencies. These are unrelated to the DocGen process, but there was nothing in the repo to tell me that.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_third_attempt_run_doggen_at_project_root">Third Attempt: Run DogGen at Project Root?</h3>
@@ -210,7 +230,7 @@ Downloaded: http://repo.maven.apache.org/maven2/org/testng/testng/6.5.2/testng-6
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">[INFO] ------------------------------------------------------------------------
+<pre class="highlight"><code class="language-bash" data-lang="bash">[INFO] ------------------------------------------------------------------------
 [INFO] Building RHQ Enterprise Server JAR 4.14.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [WARNING] The POM for org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT is missing, no dependency information available
@@ -308,7 +328,7 @@ Downloaded: http://repo.maven.apache.org/maven2/org/testng/testng/6.5.2/testng-6
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash" data-lang="bash">[jmorgan@jmorgan-bne-redhat-com jar] (release/jon3.3.x) $ mvn -Ddocgen compile -DskipTests -Dmaven.test.skip
+<pre class="highlight"><code class="language-bash" data-lang="bash">[jmorgan@jmorgan-bne-redhat-com jar] (release/jon3.3.x) $ mvn -Ddocgen compile -DskipTests -Dmaven.test.skip
 OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
 [INFO] Scanning for projects...
 [INFO]
@@ -350,22 +370,112 @@ Failure to find org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT in https://oss.s
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_fifth_attempt_why_pre_requisites_matter_in_docs">Fifth Attempt: Why Pre-requisites Matter in Docs</h3>
+<div class="paragraph">
+<p>So, I got a response from the RHQ list and a key piece of info was missing:</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+You need to <strong>build RHQ first</strong> before you can <strong>build the API docs</strong>. You also need to do it on <code>master</code>, not <code>release/jon3.3.x</code>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Some choice expletives were uttered by me at this point&#8230;&#8203; This was not mentioned anywhere in the internal product doc repositories, in the originally-provided procedure, nor was it implied as a pre-requisite in the upstream docs.</p>
+</div>
+<div class="paragraph">
+<p>The problem with not setting pre-requisites in documentation mean that if a user gets dumped here by Google, there was no context to say the project needs to be built first. Folks don&#8217;t read a book cover to cover any more. You need to cater for this by telling them basic information like this at every opportunity. Treach each page as page one.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s revise the procedure with the updated information received today:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>$ yum install maven</code></p>
+</li>
+<li>
+<p><a href="https://docs.jboss.org/author/display/RHQ/Building+RHQ">Build RHQ</a>, which covers the following:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Install JDK</p>
+</li>
+<li>
+<p>Install Maven</p>
+</li>
+<li>
+<p>Install Git</p>
+</li>
+<li>
+<p>Install and Create Database for PostgreSQL</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><code>$ git clone <a href="https://github.com/rhq-project/rhq.git" class="bare">https://github.com/rhq-project/rhq.git</a> jon</code></p>
+</li>
+<li>
+<p><code>$ cd jon</code></p>
+</li>
+<li>
+<p><code>$ git checkout -b release/<em>[latest_branch]</em></code></p>
+</li>
+<li>
+<p><code>$ cd modules/enterprise/server/jar</code></p>
+</li>
+<li>
+<p><code>$ mvn -Ddocgen compile -DskipTests -Dmaven.test.skip</code> (initially, then for subsequent builds)</p>
+</li>
+<li>
+<p><code>$ mvn -Ddocgen install -DskipTests -Dmaven.test.skip</code></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Still no bueno with DocGen. :(</p>
+</div>
+<div class="paragraph">
+<p>Up until this point, I&#8217;ve spent two days on this task. I&#8217;ve decided to make lemonade out of my two-day-old lemons and correct the  <a href="https://docs.jboss.org/author/display/RHQ/Generating+Plugin+Documentation">Generating Plugin Documentation</a> community docs to reflect this. I also made changes to three other community pages linked from the <a href="https://docs.jboss.org/author/display/RHQ/Building+RHQ">Building RHQ</a> page doc page with correct information for Fedora 21:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.jboss.org/author/display/RHQ/Advanced+Build+Notes">Advanced Build Notes</a></p>
+</li>
+<li>
+<p><a href="https://docs.jboss.org/author/display/RHQ/PostgreSQL">PostgreSQL</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This info will surely prove valuable for community devs that want to experiment with RHQ.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_the_actual_and_correct_process">The Actual (and correct) Process</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We&#8217;re getting there, but there is still quite a path to traverse down before I can comfortably say "generating RHQ API docs is easy".</p>
+<p>This post is getting so long now, I think I&#8217;ll make a separate one.</p>
+</div>
+<div class="paragraph">
+<p>There is still quite a path to traverse down before I can comfortably say "generating RHQ API docs is easy".</p>
 </div>
 <div class="paragraph">
 <p>The <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1192869">BugZilla Bug</a> I raised to capture these challenges will hopefully help the engineers with resolving the issue for me, and for users of the project.</p>
 </div>
 <div class="paragraph">
 <p>And what&#8217;s even better is that I&#8217;ll be able to update the generation procedures for API documentation for the next time I need to pull the docs out.</p>
-</div>
-<div class="paragraph">
-<p>I don&#8217;t consider this wasted time: just a new learning experience. I&#8217;m just glad the RHQ devs are a patient lot.</p>
 </div>
 </div>
 </div>
