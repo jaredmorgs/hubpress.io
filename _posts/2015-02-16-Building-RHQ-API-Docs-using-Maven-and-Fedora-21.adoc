@@ -1,7 +1,7 @@
 
 = Building RHQ API Docs using Maven and Fedora 21
 :hp-tags: Apache Maven, Fedora 21, .bashrc, JAVA_HOME
-:hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg
+:hp-image: http://jaredmorgs.github.io/images/covers/open_source.jpg
 :published_at: 2015-02-16
 
 
