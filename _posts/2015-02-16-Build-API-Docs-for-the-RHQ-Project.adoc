@@ -2,7 +2,6 @@
 :hp-tags: Maven, RHQ, API Docs
 :hp-image: http://github.com/jaredmorgs/jaredmorgs.github.io/images/covers/open_source.jpg
 :published_at: 2015-02-16
-:source-highlighter: highlightjs
 
 Granted, this blog post will only likely interest the following audience:
 
@@ -13,7 +12,10 @@ Granted, this blog post will only likely interest the following audience:
 There are two parts to this post:
 
 * The Original Process
+** This covers the steps I took to build RHQ in a hope that others will benefit from it.
+** Some interesting take-aways about what happens when you forget to provide pre-requisite content in a procedure.
 * The Actual Process
+** When we get to this point, I'll put the actual procedure you need to follow to produce the API docs.
 
 == The Original Process
 
@@ -25,7 +27,7 @@ The original process was:
 . `$ cd modules/enterprise/server/jar`
 . `$ mvn -Ddocgen install  (or compile)`
 
-But as I found out, there is a little more to it than that.
+But after five attempts lasting over three days, I now know this is misleading to say the least.
 
 === First Attempt: No Success
 
@@ -72,6 +74,8 @@ Run this script, and it orchestrates the dependency build process for the projec
 The script and the resulting process completed successfully, and I thought I was ready to run DocGen.
 
 Not. So. Fast.
+
+It turns out that this script builds the Cassandra dependencies. These are unrelated to the DocGen process, but there was nothing in the repo to tell me that.
 
 === Third Attempt: Run DogGen at Project Root?
 
@@ -182,14 +186,47 @@ Failure to find org.rhq:rhq-enterprise-comm:jar:4.14.0-SNAPSHOT in https://oss.s
 [ERROR]
 ----
 
+=== Fifth Attempt: Why Pre-requisites Matter in Docs
+
+So, I got a response from the RHQ list and a key piece of info was missing: 
+
+WARNING: You need to *build RHQ first* before you can *build the API docs*. You also need to do it on `master`, not `release/jon3.3.x`. 
+
+Some choice expletives were uttered by me at this point... This was not mentioned anywhere in the internal product doc repositories, in the originally-provided procedure, nor was it implied as a pre-requisite in the upstream docs. 
+
+The problem with not setting pre-requisites in documentation mean that if a user gets dumped here by Google, there was no context to say the project needs to be built first. Folks don't read a book cover to cover any more. You need to cater for this by telling them basic information like this at every opportunity. Treach each page as page one. 
+
+Let's revise the procedure with the updated information received today:
+
+. `$ yum install maven`
+. https://docs.jboss.org/author/display/RHQ/Building+RHQ[Build RHQ], which covers the following:
+.. Install JDK
+.. Install Maven
+.. Install Git
+.. Install and Create Database for PostgreSQL 
+. `$ git clone https://github.com/rhq-project/rhq.git jon`
+. `$ cd jon`
+. `$ git checkout -b release/_[latest_branch]_`
+. `$ cd modules/enterprise/server/jar`
+. `$ mvn -Ddocgen compile -DskipTests -Dmaven.test.skip` (initially, then for subsequent builds)
+. `$ mvn -Ddocgen install -DskipTests -Dmaven.test.skip` 
+
+Still no bueno with DocGen. :(
+
+Up until this point, I've spent two days on this task. I've decided to make lemonade out of my two-day-old lemons and correct the  https://docs.jboss.org/author/display/RHQ/Generating+Plugin+Documentation[Generating Plugin Documentation] community docs to reflect this. I also made changes to three other community pages linked from the https://docs.jboss.org/author/display/RHQ/Building+RHQ[Building RHQ] page doc page with correct information for Fedora 21:
+
+* https://docs.jboss.org/author/display/RHQ/Advanced+Build+Notes[Advanced Build Notes]
+* https://docs.jboss.org/author/display/RHQ/PostgreSQL[PostgreSQL]
+
+This info will surely prove valuable for community devs that want to experiment with RHQ.
+
 == The Actual (and correct) Process
 
-We're getting there, but there is still quite a path to traverse down before I can comfortably say "generating RHQ API docs is easy".
+This post is getting so long now, I think I'll make a separate one.
+
+There is still quite a path to traverse down before I can comfortably say "generating RHQ API docs is easy".
 
 The https://bugzilla.redhat.com/show_bug.cgi?id=1192869[BugZilla Bug] I raised to capture these challenges will hopefully help the engineers with resolving the issue for me, and for users of the project.
 
 And what's even better is that I'll be able to update the generation procedures for API documentation for the next time I need to pull the docs out. 
-
-I don't consider this wasted time: just a new learning experience. I'm just glad the RHQ devs are a patient lot. 
-
 
