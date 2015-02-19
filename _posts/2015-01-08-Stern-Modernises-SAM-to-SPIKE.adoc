@@ -1,6 +1,6 @@
 = Stern Modernises SAM to SPIKE
 :hp-tags: pinball, SPIKE, Stern, MPU
-:hp-image: http://jaredmorgs.github.io/images/covers/pinball.jpg
+:hp-image: covers/pinball.jpg
 :published_at: 2015-01-08
 
 == New Pinball Controller for a New Era of Pinball
