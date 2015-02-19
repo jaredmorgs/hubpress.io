@@ -1,6 +1,6 @@
 = Build API Docs for the RHQ Project 
 :hp-tags: Maven, RHQ, API Docs
-:hp-image: http://jaredmorgs.github.io/images/covers/open_source.jpg
+:hp-image: covers/open_source.jpg
 :published_at: 2015-02-16
 
 Granted, this blog post will only likely interest the following audience:
