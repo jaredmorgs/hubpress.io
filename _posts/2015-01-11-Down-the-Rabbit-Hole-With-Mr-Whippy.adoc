@@ -1,6 +1,6 @@
 = Down the Rabbit Hole With Mr Whippy
 :hp-tags: Ice Cream, Mr Whippy, Greensleeves, Ice Cream Truck,
-:hp-cover: covers/softserve.jpg
+:hp-image: covers/softserve.jpg
 
 An ice cream van decided to roll down our street today, playing some undecipherable tune that wasn't Greensleeves. This started me down an interesting internet trip about the history of Mr Whippy and Mobile Ice Cream vans in Australia.
 
