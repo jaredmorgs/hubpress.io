@@ -1,6 +1,7 @@
 = Making a Standing Desk using a Shelving Rail System 
 :published_at: 2013-04-23
 :hp-tags: Cheap and Cheerful, DIY, Tool Co-op, Standing Desk, Shelving, Masters North Lakes 
+:hp-cover: covers/ideas.jpg
 
 == Summary
 
