@@ -1,7 +1,7 @@
 = A Modular Christmas Light Idea That Is Begging To Be Made
 :published_at: 2015-01-07
 :hp-tags: LED, Christmas 
-:hp-cover: covers/ideas.jpg
+:hp-image: covers/ideas.jpg
 
 During a Christmas long past, I had the most unpleasant job of untangling a 300 string set of these Christmas Lights. Being the smart geek, I had wound them around a large postage tube to try and keep them from getting untangled, but even that didn't help.
 
