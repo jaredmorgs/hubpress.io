@@ -5,7 +5,7 @@
  
 I had some old treated pine fence palings left over from when I replaced all the side gate palings. My wife suggested I use them to fix up the borders around the trees, so I took her advice and got it done over two weekends. 
 
-image::http://jaredmorgs.github.io/images/Tree_Border_Two.jpg[title="The Finished Product", width="300, height="500"]
+image::Tree_Border_Two.jpg[title="The Finished Product", width="300, height="500"]
 
 == Would You Use Wood That Would Cost You Nix?
 
@@ -40,4 +40,4 @@ Even though I measured once, measured twice, I still had some issues with measur
 
 All in all, they've come up really nicely. All up, I spent about $100 including some tools I needed for the job. Most of the expense was for the plank of plywood I used to convert my glass-top office desk to a workbench. That paid dividends these two weekends for sure.
 
-image::http://jaredmorgs.github.io/images/Tree_Border_Two.jpg[title="Being Frugal Pays", width="300, height="500"]
+image::Tree_Border_Two.jpg[title="Being Frugal Pays", width="300, height="500"]
