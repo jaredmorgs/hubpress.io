@@ -1,6 +1,7 @@
 = Comparing Shipito to Hop Shop Go
 :published_at: 2014-08-07 
 :hp-tags: freight forwarding, Amazon.com, USA to Australia, shipito, hop shop go 
+:hp-cover: covers/comparison.jpg
 
 
 I recently decided to take the plunge and purchase some products from Amazon.com that were only available in the US, and would not be shipped to anywhere other than USA addresses.
