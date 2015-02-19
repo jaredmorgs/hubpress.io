@@ -1,6 +1,6 @@
 = Turning a Shield Tablet US Version into a Rest of World Version
 :hp-tags: NVidia, Shield Tablet, US to Rest of World, wx_na_wf to wx-un-do
-:hp-image: http://jaredmorgs.github.io/images/covers/android.jpg
+:hp-image: covers/android.jpg
 :published_at: 2015-01-15
 :toc:
 
