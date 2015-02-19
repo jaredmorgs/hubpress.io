@@ -1,12 +1,12 @@
 = Poetic Revolution Case for the NVidia Shield Tablet (All Variants)
 :hp-tags: Poetic, Revolution, Tablet Cases, NVidia Shield
-:hp-image: http://jaredmorgs.github.io/images/covers/android.jpg
+:hp-image: covers/android.jpg
 
 I've been waiting for Poetic to release a good protection solution for the NVidia Shield Tablet, and they have done a pretty good job with the Poetic Revolution case. There are some small issues with the case, but overall it is definitely the most rugged case offering I've seen on the market at the time of writing.
 
-image::http://jaredmorgs.github.io/images/Poetic/Install_Complete.jpg[title="Case in Portrait Mode", width="300, height="500"]
+image::Poetic/Install_Complete.jpg[title="Case in Portrait Mode", width="300, height="500"]
 
-image::http://jaredmorgs.github.io/images/Poetic/Install_Complete_Landscape.jpg[title="Case in Landscape Mode", width="300, height="500"]
+image::Poetic/Install_Complete_Landscape.jpg[title="Case in Landscape Mode", width="300, height="500"]
 
 The case is sturdy in design, and definitely offers advanced protection for drops and mishaps. I really wish Poetic decided to adopt the style of the Slimline case range for the Nexus 7 2013. I'll go into comparison detail in the Cons section.
 
@@ -31,16 +31,16 @@ The case is sturdy in design, and definitely offers advanced protection for drop
 
 Here are some shots of the case, taken while I was installing it.
 
-image::http://jaredmorgs.github.io/images/Poetic/Case_Front.jpg[title="Front of the case immediately after unboxing.", width="300, height="500"]
+image::Poetic/Case_Front.jpg[title="Front of the case immediately after unboxing.", width="300, height="500"]
 
-image::http://jaredmorgs.github.io/images/Poetic/Case-Back.jpg[title="The back of the case, showing the kick stand.", width="300, height="500"]
+image::Poetic/Case-Back.jpg[title="The back of the case, showing the kick stand.", width="300, height="500"]
 
-image::http://jaredmorgs.github.io/images/Poetic/Shell_Internal.jpg[title="The right portrait side of the case, showing the button zone.", width="300, height="500"]
+image::Poetic/Shell_Internal.jpg[title="The right portrait side of the case, showing the button zone.", width="300, height="500"]
 
-image::http://jaredmorgs.github.io/images/Poetic/Inner_and_Outer.jpg[title="The internal plastic shell and the outer soft plastic.", width="300, height="500"]
+image::Poetic/Inner_and_Outer.jpg[title="The internal plastic shell and the outer soft plastic.", width="300, height="500"]
 
-image::http://jaredmorgs.github.io/images/Poetic/Connecter_Cutout_Insert.jpg[title="The cutouts for the USB, HDMI, and Headphone plugs, and the left bass port.", width="300, height="500"]
+image::Poetic/Connecter_Cutout_Insert.jpg[title="The cutouts for the USB, HDMI, and Headphone plugs, and the left bass port.", width="300, height="500"]
 
-image::http://jaredmorgs.github.io/images/Poetic/Left_Side_Insert.jpg[title="The plastic insert showing the portholes for the connectors.", width="300, height="500"]
+image::Poetic/Left_Side_Insert.jpg[title="The plastic insert showing the portholes for the connectors.", width="300, height="500"]
 
 What do you think about cases? Worth it? Or just bulky additions to your device?
