@@ -1,6 +1,7 @@
 = Sony MDR-EX90SL Headphone Bass Port Mod
 :hp-tags: Headphone Mods, Sony, MDR-EX90SL
 :published_at: 2009-12-08
+:hp-image: covers/audio.jpg
 
 OK. I love my music, and I love headphones that can replicate bass really well. I decided to purchase the Sony MDR-EX90SL (the SL stands for Short Lead).
 
