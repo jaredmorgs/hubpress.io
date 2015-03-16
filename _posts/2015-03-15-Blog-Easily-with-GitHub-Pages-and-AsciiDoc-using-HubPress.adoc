@@ -1,6 +1,6 @@
 
 = Blog Easily with GitHub Pages and AsciiDoc using HubPress
-:hp-tags: HubPress, Markdown, AsciiDoc, AsciiDoctor
+:hp-tags: HubPress, AsciiDoc, AsciiDoctor
 :published_at: 2015-03-15
 
 == Summary
