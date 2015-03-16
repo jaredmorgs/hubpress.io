@@ -1,10 +1,11 @@
 
-= Blog Easily with HubPress
-:hp-tags: HubPress, Markdown, AsciiDoc, AsciiDoctor Migration
+= Blog Easily with GitHub Pages and AsciiDoc using HubPress
+:hp-tags: HubPress, Markdown, AsciiDoc, AsciiDoctor
+:published_at: 2015-03-15
 
 == Summary
 
-There's a new way to blog using GitHub Pages or GitHub:
+There's a new way to blog using GitHub Pages and AsciiDoc:
 
 * No PC required
 ** Blog on your tablet or phablet.
@@ -55,4 +56,4 @@ Because HubPress is hosted on GitHub, you can do an update by pulling down the l
 
 To learn how to do this correctly (there's a trick to it the first time you pull changes from upstream), you can watch this video I created explaining the process.
 
-video::https://youtu.be/KCylB780zSM[Updating Your HubPress Blog Instance]  
+video::KCylB780zSM[youtube]
