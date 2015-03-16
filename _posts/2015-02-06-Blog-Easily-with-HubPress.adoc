@@ -1,6 +1,6 @@
 
 = Blog Easily with HubPress
-:hp-tags: HubPress, Markdown, AsciiDoc, Migration
+:hp-tags: HubPress, Markdown, AsciiDoc, AsciiDoctor Migration
 
 == Summary
 
@@ -15,7 +15,7 @@ There's a new way to blog using GitHub Pages or GitHub:
 
 http://hubpress.io/[HubPress] lets you free yourself from heavy configuration, provides a real-time editing environment, rich social media configuration, and a variety of baked-in styles. But most importantly, it is one of the only forkable blog offerings that has made the wise decision to use the https://github.com/asciidoctor/asciidoctor.js[AsciiDoctor ] Javascript port to provide tech bloggers far greater control over how they structure blog posts.
 
-== Why AsciiDoc
+== Why AsciiDoc?
 
 If you love writing about technology, and love to make complex instructions with code samples and detailed tables, you would have already found that you have to make a fair few sacrifices with Markdown posts. 
 
@@ -25,8 +25,34 @@ AsciiDoctor -- which was championed by former Red Hat alumni https://github.com/
 
 How this affects blog writers is that you don't have to kludge your way around the deficiencies of Markdown, and you can get on with the task of writing rich blog posts with complex procedures and code samples.
 
-== Where My HubPress Journey Started
+== Getting Started
 
-I became interested in AsciiDoctor recently when the AsciiDoctor team announced they were successful in getting the https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc plug-in] listed on the supported Converter list on the http://jekyllrb.com/docs/plugins/[Jekyll Plugins] page.
+If you want to give HubPress a try you need to have the following:
 
-I started collaborating in a docs capacity with the team on a forkable https://github.com/asciidoctor/jekyll-asciidoc-quickstart[jekyll-asciidoctor Quickstart Blog] repo that used JenkinsCI to enable bloggers to initially configure a Jekyll blog with AsciiDoctor support. Once configured, you could set up the JenkinsCI build server to intercept commits on the `gh-pages` branch of the repository. I was just about to start configuring the repository, and installing all  
+* A free https://github.com[GitHub] Account
+* A device with a web browser.
+* If you want to upload images directly to GitHub:
+** A Git Client (iOS/Android/Windows/Mac/Linux)
+** Git Command Line (Windows/Mac/Linux)
+
+NOTE: If you want to load images from an image hosting site, you don't need any Git client installed: HubPress supports this natively. 
+
+== Installing HubPress
+
+Once you have a GitHub account, continue to the https://github.com/HubPress/hubpress.io/blob/master/README.adoc[HubPress Setup Instructions] and follow the steps to set up the blog.
+
+The terse instructions are:
+
+. Fork the HubPress repository.
+. Make minor changes to the forked repository. 
+. Log onto the HubPress management console.
+. Customise your blog to your liking.
+. Write and publish your first blog post in AsciiDoc.
+
+== Updating HubPress
+
+Because HubPress is hosted on GitHub, you can do an update by pulling down the latest changes from the HubPress master repository.
+
+To learn how to do this correctly (there's a trick to it the first time you pull changes from upstream), you can watch this video I created explaining the process.
+
+video::https://youtu.be/KCylB780zSM[Updating Your HubPress Blog Instance]  
