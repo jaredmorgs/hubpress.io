@@ -32,12 +32,7 @@ How this affects blog writers is that you don't have to kludge your way around t
 If you want to give HubPress a try you need to have the following:
 
 * A free https://github.com[GitHub] Account
-* A device with a web browser.
-* If you want to upload images directly to GitHub:
-** A Git Client (iOS/Android/Windows/Mac/Linux)
-** Git Command Line (Windows/Mac/Linux)
-
-NOTE: If you want to load images from an image hosting site, you don't need any Git client installed: HubPress supports this natively. 
+* A device with a web browser. 
 
 == Installing HubPress
 
@@ -58,3 +53,9 @@ Because HubPress is hosted on GitHub, you can do an update by pulling down the l
 To learn how to do this correctly (there's a trick to it the first time you pull changes from upstream), you can watch this video I created explaining the process.
 
 video::KCylB780zSM[youtube]
+
+== Embedding Images
+
+You don't even need to use a Git client or app to push images to your blog. Just use GitHub Issues, or link to issues from your cloud backup provider. Watch this video to learn how to do this.
+
+video::KoaGU91qJv8[youtube]
