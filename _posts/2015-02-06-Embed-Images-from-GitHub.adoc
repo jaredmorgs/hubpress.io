@@ -1,12 +1,10 @@
-= ToDo: How To Convert a Jekyll Markdown Blog to HubPress
-:hp-tags: HubPress, Markdown, AsciiDoc, Migration
+= Embed Images from GitHub
 
-== Summary
+Here is an image embedded into the post already
 
-There's a new way to blog using GitHub Pages or GitHub:
+image::https://cloud.githubusercontent.com/assets/952793/6679835/c19a66e6-cc99-11e4-860d-762d4bd921e9.jpg[Postie Bike Burnout]
 
-* No PC required: internet connection is all you need.
-* No Gemfiles to install and configure.
-* No Git commands to master.
+.Capcom Pinball Magic
+image::https://cloud.githubusercontent.com/assets/952793/6679976/7d32e96c-cc9c-11e4-8e7d-a9688bf11fdc.jpg[]
 
-http://hubpress.io/[HubPress] lets you free yourself from heavy configuration, provides a real-time editing environment, rich social media configuration, a variety of baked in styles. But most importantly, it is one of the only forkable blog offerings that has made the wise decision to use the https://github.com/asciidoctor/asciidoctor.js[AsciiDoctor] Java implementation
+image::https://copy.com/L8mdNqvuR18etOgv[]
