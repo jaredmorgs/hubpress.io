@@ -2,25 +2,42 @@
 :hp-tags: The Pinball Arcade, NVidia, Shield Tablet, Gamepad Mapper
 :hp-cover: covers/pinball.jpg
 
+== Summary
 I've discovered a way to get basic UI controls in The Pinball Arcade, which lets you access almost all UI buttons relevant from starting the app, selecting a table, starting the game, then exiting all the way back to the Android Home Screen. 
 
 The only thing you can't do cleanly is scroll the table carousel, but you can implement a mouse swipe that gets around it. It's not as clean as I would have like though.
 
-You need to have a Shield Tablet and Shield Tablet Controller to use this solution. The Shield Tablet
+== Pre-requisites
 
-I put my UX hat on and tried to emulate the menu selection patterns in the PS3/PS4. The reason was to ensure I had a consistent mapping between primary and secondary button commands. 
+You need to have a Shield Tablet and Shield Tablet Controller to use this solution.
 
-NOTE: It it not possible to do this with a normal gamepad mapper program that requires a rooted device to access the touchscreen emulation framework. *Unless* the program has multiple pages available for keymaps.
+NOTE: It it not possible to do this with a normal gamepad mapper program that requires a rooted device to access the touchscreen emulation framework. *Unless* the program has multiple pages available for keymaps. I'm not certain that other apps like SixAxis feature this function.
 
 I was able to do this because the NVidia Shield Gamepad Mapper software allows you to create separate _Pages_ that allow you to break up control schemes based on button presses. You'll see what I mean by this when you look at the images and the button labels. 
 
-I'm not sure whether apps like Dancing Pixel's _SixAxis_ app supports multiple pages. If it does, I'll definitely update this post. 
+== Mapping
+
+Get this mapping set by doing the following:
+
+. Turn on the Tablet Controller
+. Open Pinball Arcade
+. Long press the `|>` button on the controller to open the Gamepad Mapper.
+. Tap the Cloud Download symbol to review the available profiles. 
+. Select `jaredmorgs TPA Portrait`. 
+
+=== Mapping Choices
+
+I put my UX hat on and tried to emulate the menu selection patterns I saw briefly in the PS3/PS4 version I have access to in the Games Room at work. The reason I did this was to ensure I had a consistent mapping between primary and secondary button commands. Primary buttons traverse the user through the menu whereas secondary buttons reverse the transition.
 
 Here are the mappings in pictorial form.
+
+==== Splash Screen
 
 .Splash Screen
 image::TPA_UI/1-Splash_Screen.png[Splash Screen Mapping]
 `A` will get past the initial splash screen and take you to the Main Menu
+
+==== Main Menu
 
 .Main Menu
 image::TPA_UI/2-Main_Screen.png[Main Menu Screen Mapping]
@@ -30,13 +47,19 @@ image::TPA_UI/2-Main_Screen.png[Main Menu Screen Mapping]
 
 NOTE: I need to do more work on the Tournament UI commands, and I couldn't at the time of writing because there wasn't an active tournament running.
 
+==== Table Carousel
+
 .Table Carousel
 image::TPA_UI/3-Table_Carousel.png[Table Carousel Mapping]
 `A` takes you to the Table Flyover screen.
 
 `B` takes to back to the Main Menu.
 
-Unfortunatley you will need to use your finger here to scroll the carousel. You can implement a Mouse Gesture by dragging the "Pointy Finger" element onto the carousel and setting a button to trigger the mouse click so you can tap and drag. Really cludgy, but it is the only way to get around this UX issue.
+Unfortunatley you will need to use your finger here to scroll the carousel unless you implement a Mouse Gesture by dragging the "Pointy Finger" element onto the carousel and setting a button to trigger the mouse click so you can tap and drag. Really cludgy, but it is the only way to get around this UX issue.
+
+IMPORTANT: If FarSight implemented carousel scrolling using the D-pad, that would make life much, much easier here. Hint, hint. ;-)
+
+==== Table Flyover
 
 .Table Flyover
 image::TPA_UI/4-Flyover.png[Flyover Mapping]
@@ -50,15 +73,20 @@ image::TPA_UI/5-Game_Mode.png[Game Mode Mapping]
 
 `X` cycles through the views (both table and plunger). Long pressing this button locks the view from scrolling in table views.
 
+==== Pause Menu
+
 .Pause Menu
 image::TPA_UI/6-Pause_Menu.png[Game Mode Mapping]
 `A` returns you back to Game Mode.
 
 `B` opens the Quit Table menu.
 
+==== Quit Table Menu
+
 .Quit Table Menu
-image::TPA_UI/7-Quit_Table.png[Game Mode Mapping]
-`A` returns you back to Game Mode.
+image::TPA_UI/7-Quit_Confirm.png[Quit Table Menu]
+`A` quits the game and returns you to the Table Flyover. 
 
-`B` opens the Quit Table menu.
+`B` returns you to the Pause menu.
 
+I thought long and hard about making `A` the priority here. Normally if you are going to make the user lose progress, you should make the priority button take the user back to safety (in this case the Pause menu). Because the previous menu used the secondary button to access the quit menu, I determined this would be considered a genuine user action, and not something a user would do by accident.
