@@ -1,6 +1,6 @@
 = Retrofit UI Commands in The Pinball Arcade using NVidia Gamepad Mapper
 :hp-tags: The Pinball Arcade, NVidia, Shield Tablet, Gamepad Mapper
-:hp-cover: covers/pinball.jpg
+:hp-image: covers/pinball.jpg
 
 == Summary
 I've discovered a way to get basic UI controls in The Pinball Arcade, which lets you access almost all UI buttons relevant from starting the app, selecting a table, starting the game, then exiting all the way back to the Android Home Screen. 
