@@ -23,7 +23,7 @@ Get this mapping set by doing the following:
 . Open Pinball Arcade
 . Long press the `|>` button on the controller to open the Gamepad Mapper.
 . Tap the Cloud Download symbol to review the available profiles. 
-. Select `jaredmorgs TPA Portrait`. 
+. Select the profile created by `Jared Morgan`. 
 
 === Mapping Choices
 
