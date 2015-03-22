@@ -1,0 +1,64 @@
+= Retrofit UI Commands in The Pinball Arcade using NVidia Gamepad Mapper
+:hp-tags: The Pinball Arcade, NVidia, Shield Tablet, Gamepad Mapper
+:hp-cover: covers/pinball.jpg
+
+I've discovered a way to get basic UI controls in The Pinball Arcade, which lets you access almost all UI buttons relevant from starting the app, selecting a table, starting the game, then exiting all the way back to the Android Home Screen. 
+
+The only thing you can't do cleanly is scroll the table carousel, but you can implement a mouse swipe that gets around it. It's not as clean as I would have like though.
+
+You need to have a Shield Tablet and Shield Tablet Controller to use this solution. The Shield Tablet
+
+I put my UX hat on and tried to emulate the menu selection patterns in the PS3/PS4. The reason was to ensure I had a consistent mapping between primary and secondary button commands. 
+
+NOTE: It it not possible to do this with a normal gamepad mapper program that requires a rooted device to access the touchscreen emulation framework. *Unless* the program has multiple pages available for keymaps.
+
+I was able to do this because the NVidia Shield Gamepad Mapper software allows you to create separate _Pages_ that allow you to break up control schemes based on button presses. You'll see what I mean by this when you look at the images and the button labels. 
+
+I'm not sure whether apps like Dancing Pixel's _SixAxis_ app supports multiple pages. If it does, I'll definitely update this post. 
+
+Here are the mappings in pictorial form.
+
+.Splash Screen
+image::TPA_UI/1-Splash_Screen.png[Splash Screen Mapping]
+`A` will get past the initial splash screen and take you to the Main Menu
+
+.Main Menu
+image::TPA_UI/2-Main_Screen.png[Main Menu Screen Mapping]
+`A` will take you to the Table Carousel.
+
+`B` will take you to the Tournaments menu. 
+
+NOTE: I need to do more work on the Tournament UI commands, and I couldn't at the time of writing because there wasn't an active tournament running.
+
+.Table Carousel
+image::TPA_UI/3-Table_Carousel.png[Table Carousel Mapping]
+`A` takes you to the Table Flyover screen.
+
+`B` takes to back to the Main Menu.
+
+Unfortunatley you will need to use your finger here to scroll the carousel. You can implement a Mouse Gesture by dragging the "Pointy Finger" element onto the carousel and setting a button to trigger the mouse click so you can tap and drag. Really cludgy, but it is the only way to get around this UX issue.
+
+.Table Flyover
+image::TPA_UI/4-Flyover.png[Flyover Mapping]
+`A` starts the game and enters Game Mode.
+
+`B` takes to back to the Table Carousel.
+
+.Game Mode
+image::TPA_UI/5-Game_Mode.png[Game Mode Mapping]
+`B` opens the Options menu (also called the Pause menu).
+
+`X` cycles through the views (both table and plunger). Long pressing this button locks the view from scrolling in table views.
+
+.Pause Menu
+image::TPA_UI/6-Pause_Menu.png[Game Mode Mapping]
+`A` returns you back to Game Mode.
+
+`B` opens the Quit Table menu.
+
+.Quit Table Menu
+image::TPA_UI/7-Quit_Table.png[Game Mode Mapping]
+`A` returns you back to Game Mode.
+
+`B` opens the Quit Table menu.
+
