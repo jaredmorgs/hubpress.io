@@ -8,6 +8,8 @@
 
 I've been waiting patiently until NVidia released the Android 5.0 Factory Images in late December 2014 before I even attempted this experiment. This blog post describes how to turn the NVidia Shield LTE Tablet I purchased with the US firmware to a "Rest of World" variant, safely and successfully.
 
+WARNING: I've since found out that while the process does indeed allow you to flash the Rest of World ROM to the device, the modem hardware check done at each boot cycle prevents the RoW modems from being loaded. Some XDA members are looking into ways to force the modem files _you_ want loaded to be installed at boot in http://forum.xda-developers.com/showthread.php?t=2951111[this thread]. Until this is resolved, this post will not allow you to enable RoW modem bands on a US originating device.
+
 == Why Do This?
 
 Normally, changing a device to a completely different device variant OS is a risky undertaking. But because NVidia have made minimal mods to the AOSP cut of their operating system, you can switch any LTE Shield Tablet to use either the "North America" (wx_na_do) or "Rest of World" (wx-un-do) Android Builds. 
