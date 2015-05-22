@@ -3,7 +3,7 @@
 :hp-image: covers/open_source.jpg
 :published_at: 2015-5-22
 
-After doing something pretty stupid with gParted and LVM last night, I find myself reinstalling Fedora 20 today. I've found a fix to the FAILED package messages you get if you have tried running `fedup` a few times trying to upgrade.
+After doing something pretty stupid with gParted and LVM last night, I find myself reinstalling Fedora 20 today. I've found a fix to the FAILED package messages you get if you have tried running `fedup` a few times trying to upgrade. 
 
 The `fedup` tool creates a temporary upgrade cache in `/var/cache/system-upgrade/`. If you are seeing any strange behavior with `fedup` as it attempts to download packages, you might want to move into this directory and delete all data. 
 
