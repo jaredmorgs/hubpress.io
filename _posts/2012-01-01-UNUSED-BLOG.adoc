@@ -1,5 +1,0 @@
-= UNUSED BLOG
-:published_at: 2012-01-01
-:hp-tags: 
-:hp-image: 
-
