@@ -1,6 +1,7 @@
 
 = How Social Media Can Open Doors to New Opportunites
-:hp-tags: HubPress, Markdown, AsciiDoc, GitHub Pages,
+
+:hp-tags: HubPress, Markdown, AsciiDoc, GitHub Pages
 :hp-image: covers/ideas.jpg
 
 Out of the blue, I received a tweet from https://mobile.twitter.com/anthonny_q[Anthonny Quérouil]. He suggested that if I liked AsciiDoc, I should check out HubPress. I'm so thankful he reached out to me, because it started me down a fantastic journey of open source collaboration and gave me the ability to write amazingly detailed blog posts directly on my tablet.
