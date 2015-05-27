@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Using Open Source to Reinvigorate Pinball 2000</title>
+    <meta name="description" content="" />
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//jaredmorgs.github.io/themes/Saga/assets/css/style.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//jaredmorgs.github.io/themes/Saga/assets/css/animate.min.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//jaredmorgs.github.io/themes/Saga/favicon.ico" rel="shortcut icon">
+    <link rel="canonical" href="https://jaredmorgs.github.io/2011/10/04/Using-Open-Source-to-Reinvigorate-Pinball-2000.html" />
+    
+    <meta property="og:site_name" content="The Musings of Jared Morgan (jaredmorgs)" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Using Open Source to Reinvigorate Pinball 2000" />
+    <meta property="og:description" content="I remember when I was restoring pinball machines that I learned a very important lesson about computer repair. I accidentally caused mainboard damage to a Pinball 2000 (Pin2K) game: Star Wars: Episode 1.  It is very easy to do, because..." />
+    <meta property="og:url" content="https://jaredmorgs.github.io/2011/10/04/Using-Open-Source-to-Reinvigorate-Pinball-2000.html" />
+    <meta property="og:image" content="https://jaredmorgs.github.io/images/covers/pinball.jpg" />
+    <meta property="article:published_time" content="2011-10-03T14:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-05-27T11:16:04.949Z" />
+    <meta property="article:tag" content="Pinball 2000" />
+    <meta property="article:tag" content="nucore" />
+    <meta property="article:tag" content="Open Source" />
+    <meta property="article:tag" content="Linux" />
+    <meta property="article:tag" content="Big Guys Pinball" />
+    <meta property="article:tag" content="Pin2K" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Using Open Source to Reinvigorate Pinball 2000" />
+    <meta name="twitter:description" content="I remember when I was restoring pinball machines that I learned a very important lesson about computer repair. I accidentally caused mainboard damage to a Pinball 2000 (Pin2K) game: Star Wars: Episode 1.  It is very easy to do, because..." />
+    <meta name="twitter:url" content="https://jaredmorgs.github.io/2011/10/04/Using-Open-Source-to-Reinvigorate-Pinball-2000.html" />
+    <meta name="twitter:image:src" content="https://jaredmorgs.github.io/images/covers/pinball.jpg" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "The Musings of Jared Morgan (jaredmorgs)",
+    "author": {
+        "@type": "Person",
+        "name": "Jared Morgan",
+        "image": "https://avatars.githubusercontent.com/u/952793?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://jaredmorgs.github.io"
+    },
+    "headline": "Using Open Source to Reinvigorate Pinball 2000",
+    "url": "https://jaredmorgs.github.io/2011/10/04/Using-Open-Source-to-Reinvigorate-Pinball-2000.html",
+    "datePublished": "2011-10-03T14:00:00.000Z",
+    "dateModified": "2015-05-27T11:16:04.949Z",
+    "image": "https://jaredmorgs.github.io/images/covers/pinball.jpg",
+    "keywords": "Pinball 2000,  nucore,  Open Source,  Linux,  Big Guys Pinball,  Pin2K",
+    "description": "I remember when I was restoring pinball machines that I learned a very important lesson about computer repair. I accidentally caused mainboard damage to a Pinball 2000 (Pin2K) game: Star Wars: Episode 1.  It is very easy to do, because..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="The Musings of Jared Morgan (jaredmorgs)" href="https://jaredmorgs.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-Pinball-2000 tag-nucore tag-Open-Source tag-Linux tag-Big-Guys-Pinball tag-Pin2K">
+    <header id="header" class="animated fadeIn" style="background-image: url(https://jaredmorgs.github.io/images/covers/pinball.jpg)">
+    <div class="header-background">
+    <section class="blog-content">
+        <a id="site-url" class="blog-title" href="https://jaredmorgs.github.io">The Musings of Jared Morgan (jaredmorgs)</a>
+        <span class="blog-description">for Android, Pinball, Open Source, and other interesting topics. </span>
+        <nav class="links fadeIn animated">
+            <ul>
+                <!-- <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li> -->
+        
+            </ul>
+        </nav>
+    </section>
+    <section class="header-content">
+        <h1 class="post-title animated fadeInUp">Using Open Source to Reinvigorate Pinball 2000</h1>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1317650400" datetime="2011-10-04T00:00" title="04 October 2011">2011-10-04 00:00:00<ago class="ago"></time></span>
+            <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="https://jaredmorgs.github.io/tag/Pinball-2000">Pinball 2000</a>, <a href="https://jaredmorgs.github.io/tag/nucore"> nucore</a>, <a href="https://jaredmorgs.github.io/tag/Open-Source"> Open Source</a>, <a href="https://jaredmorgs.github.io/tag/Linux"> Linux</a>, <a href="https://jaredmorgs.github.io/tag/Big-Guys-Pinball"> Big Guys Pinball</a>, <a href="https://jaredmorgs.github.io/tag/Pin2K"> Pin2K</a></span>
+            <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="">Jared Morgan</a></span></span>
+    </section>
+    </div>
+</header>
+<main id="main" class="content">
+    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-Pinball-2000 tag-nucore tag-Open-Source tag-Linux tag-Big-Guys-Pinball tag-Pin2K">
+        <section class="post-content">
+            <div class="paragraph">
+<p>I remember when I was restoring pinball machines that I learned a very important lesson about computer repair. I accidentally caused mainboard damage to a <a href="http://en.wikipedia.org/wiki/Pinball_2000">Pinball 2000</a> (Pin2K) game: <a href="http://www.ipdb.org/search.pl?any=star+wars&amp;search=Search+Database&amp;searchtype=quick#4458">Star Wars: Episode 1</a>.  It is very easy to do, because the two Molex connectors from the ATX power supply were not <a href="http://en.wikipedia.org/wiki/Electrical_connector#Keying">keyed</a>, and you could reverse the ground for power. I did this, and took out the power circuit on the mainboard.</p>
+</div>
+<div class="paragraph">
+<p>This was a <strong>big</strong> problem, because the Pin2K mainboards were a BAT-style PC mainboard (running a Cyrix Media GX CPU which was connected to a Cyrix CX5520 bridge). These motherboards were used mainly in set-top boxes such as cable TV systems. The Pin2K series used a PCI custom card called a PRISM card. This card contained all the game logic, sound effects, and video packages for the games. If the power spike travelled to the PRISM card, you basically had yourself a fantastic $8000 piece of furniture.</p>
+</div>
+<div class="paragraph">
+<p>At the time, the machine was mothballed.</p>
+</div>
+<div class="paragraph">
+<p>I discovered that <a href="http://www.bigguyspinball.com/index.shtml">Big Guys Pinball</a> have reverse engineered the Pin2K core, and created some custom boards which can be used to replace damaged Pin2K logic box systems. The new system is called <strong>nucore</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The great thing is they are using Linux (Ubuntu), and <a href="http://en.wikipedia.org/wiki/Commercial_off-the-shelf">COTS</a> motherboards and Video Cards, to make this system a reality. You can purchase the components separately, or as a plug-and-play system ready for production use.</p>
+</div>
+<div class="paragraph">
+<p>Hooray for Open Source, and Ingenuity!</p>
+</div>
+<div class="paragraph">
+<p><strong>Update</strong></p>
+</div>
+<div class="paragraph">
+<p>Unfortunately the Big Guys at Big Guys Pinball ran into a little bit of strife in 2014 during the pinball resurgence. I believe they were kindly asked to discontinue producing these boards because <a href="http://www.planetarypinball.com/mm5/merchant.mvc?">Planetary Pinball</a> had the exclusive rights to reproduce all Bally and Williams parts (including, unfortunately, the Pin2K hardware system). To date, I am not aware of any efforts to resume production. This is a real shame, and unless Planetary Pinball get their act together, it may see the end of crippled Pin2K units.</p>
+</div>
+        </section>
+
+    
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jaredmorgs'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    
+    </article>
+
+</main>
+    <footer class="animated fadeIn" id="footer">
+        <section class="colophon">
+          <section class="copyright">Copyright &copy; <span itemprop="copyrightHolder">The Musings of Jared Morgan (jaredmorgs)</span>. <span rel="license">All Rights Reserved</span>.</section>
+          <section class="poweredby">Published with <a class="icon-ghost" href="http://hubpress.io">HubPress</a></section>
+        </section>
+        <section class="bottom">
+          <section class="attribution">
+            <a href="http://github.com/Reedyn/Saga">Built with <i class="fa fa-heart"></i> and Free and Open-Source Software</a>.
+          </section>
+        </section>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+    <script src="//jaredmorgs.github.io/themes/Saga/assets/js/scripts.js?v=1.0.0"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58317734-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
