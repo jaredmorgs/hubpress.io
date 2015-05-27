@@ -1,7 +1,6 @@
 = Package Messages FAILED when Using Fedora fedup System Upgrade Tool
 :hp-tags: fedora, fedup, FAILED, 
 :hp-image: covers/open_source.jpg
-:published_at: 2015-5-22
 
 After doing something pretty stupid with gParted and LVM last night, I find myself reinstalling Fedora 20 today. I've found a fix to the FAILED package messages you get if you have tried running `fedup` a few times trying to upgrade. 
 
