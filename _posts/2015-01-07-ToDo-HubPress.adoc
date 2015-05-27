@@ -1,5 +1,0 @@
-= ToDo: HubPress
-:hp-tags: GitHub Pages, AsciiDoc, HubPress.io,
-
-== 
-
