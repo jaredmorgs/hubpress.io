@@ -1,4 +1,4 @@
-= Caffeingineering 101 = 
+= Caffeingineering 101
 
 :hp-tags: Coffee, Nerd, 
 
@@ -16,7 +16,7 @@ I'm an addict in the way a smack addict is. I'd lick spilt coffee off the kitche
 
 So when I say this post is for other coffee addicts, I want you to be **very** clear who I'm talking to. __Soy mocha latte__ sipping poseurs need not read any further.
 
-=== Mothered by necessity === 
+== Mothered by necessity
 
 I usually drink my coffee strong and black.
 
@@ -26,7 +26,7 @@ And today I've decided to share those recipes with the world.
 
 Once again, be warned. Unless you've ever seriously...and I mean **seriously**...considered spooning instant coffee directly into your face, stop reading now.
 
-=== Roll on! ===
+== Roll on!
 
 If I'm having a hard time keeping up with the day, I go for what I think of as a 'rolling' cup of coffee.
 
@@ -34,16 +34,14 @@ Basically, this style of coffee gets stronger as the day goes on, keeping you mo
 
 What you need do is:
 
-1. Make yourself a cup of coffee in your preferred style (black, no sugar, obviously).
-2. Drink about three quarters of the cup.
-3. Take the remaining dregs back to the kitchen and, without emptying your cup first, make another coffee.
-4. Don't rinse, just repeat.
+. Make yourself a cup of coffee in your preferred style (black, no sugar, obviously).
+. Drink about three quarters of the cup.
+. Take the remaining dregs back to the kitchen and, without emptying your cup first, make another coffee.
+. Don't rinse, just repeat.
 
 The more coffees you have in a day, the stronger the dregs in your cup will be and the stronger they, in turn, will make the next cup. 
 
-
-
-=== The Cokeacino ===
+== The Cokeacino
 
 This one is strictly for the hard core. Proceed at your own risk.
 
@@ -51,17 +49,16 @@ If you need a serious boost in a serious hurry, nothing beats a Cokeacino.
 
 To enjoy this marvel of caffeingineering (and the heart palpitations that invariably follow it):
 
-1. Make a **half** cup of your coffee of choice. Don't skimp on the ingredients, mind you, just stop adding water when the cup is half full. Your coffee is now twice as strong by volume.
-2. Head to the nearest vending machine and grab a Coca Cola (TM).
-3. Top off your cup with tasty cola. **Do this carefully as it will froth like a sonofabitch!**
-4. Slam down what's left in the can like you're skulling beer in an __Animal House__ remake.
-5. Drink your coffee. Don't worry; you'll get used to the sensation of carbonated coffee remarkably quickly.
-6. Try not to have a fucking heart attack as you surf the caffeine tsunami.
+. Make a **half** cup of your coffee of choice. Don't skimp on the ingredients, mind you, just stop adding water when the cup is half full. Your coffee is now twice as strong by volume.
+. Head to the nearest vending machine and grab a Coca Cola (TM).
+. Top off your cup with tasty cola. **Do this carefully as it will froth like a sonofabitch!**
+. Slam down what's left in the can like you're skulling beer in an __Animal House__ remake.
+. Drink your coffee. Don't worry; you'll get used to the sensation of carbonated coffee remarkably quickly.
+. Try not to have a fucking heart attack as you surf the caffeine tsunami.
 
 
-=== Don't sue me ===
+=== Don't sue me
 
 Seriously, just don't. I can't stress this enough. If you try one of these drinks and your heart explodes, don't fucking take it out on me. 
 
 Maybe next time you should go for a nice, hot cup of concrete.
-
