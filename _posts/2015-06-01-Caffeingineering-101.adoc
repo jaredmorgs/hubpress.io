@@ -1,5 +1,7 @@
 = Caffeingineering 101 = 
 
+:hp-tags: Coffee, Nerd, 
+
 I've been wondering how to break the ice with this new blog.
 
 Now, it may be the fact that I've only had 5 hours of sleep because I staggered into my home office at 3:30 am this morning to get a jump on the day, but as I poured my fourth cup of coffee, I realised that a perfectly serviceable post topic was right under my nose; coffee.
@@ -63,4 +65,3 @@ Seriously, just don't. I can't stress this enough. If you try one of these drink
 
 Maybe next time you should go for a nice, hot cup of concrete.
 
-:hp-tags: HubPress, Blog, Open Source,
