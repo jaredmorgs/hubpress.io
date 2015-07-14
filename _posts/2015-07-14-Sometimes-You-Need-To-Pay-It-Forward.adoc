@@ -1,0 +1,22 @@
+= Sometimes You Need To Pay It Forward
+:hp-tags: Red Hat, Open Source
+:hp-image: covers/open_source.jpg
+:published_at: 2015-07-14
+
+When you work for the Defining Open Source Software Company of the 21st Century, you get a different sense of gravity for the work you do. Even if you are in a non-engineering role, the work you do as an associate has an impact on the general Open Source community. In my case, it was Technical Writing. 
+
+I got a real crash course introduction to Open Source when I started at Red Hat over six years ago. I was put into a project called Mobicents, which was a recently acquired project as part of the JBoss acquisition. This was a team of veteran open source collaborators, who resisted repeated requests to move their project under the JBoss.org umbrella. 
+
+And here I was: a total n00b to Open Source. Not just the idea of what a Meritocracy was, but I'd never even used Linux before. I remember getting walked through how to do something basic like `ls -la` and having serious issues with stuff like spacing in the command, and understanding how tab completion in the terminal worked. And executing commands in a terminal (what, no GUI for this?) was as alien as learning Japanese to me. 
+
+It turns out that the challenge working out some pretty tough documentation challenges as a n00b--including some issues with project procedural change management--was the best grounding I could have had in my introduction to Open Source.
+
+I went on to manage many other Middleware docs projects including Red Hat JBoss EAP (including it's Common Criteria certification), Red Hat JBoss Operations Network, Red Hat Enterprise MRG, Red Hat JBoss Portal, and some other projects that were slotted in when some of the other projects were in a quiet period.
+
+I've met some amazing and inspiring people throughout my career. There are likely too many to mention here in this email, but if you are reading this as a Red Hatter (either current or alumni) you are counted among one of those people. It may sound gushy, but Red Hat is a place where excellence resides. And for those folks that decide to move on, that excellence stays with them as they share what they've learned with other people who may not know that much about Open Source. 
+
+I'm transitioning from an Associate to Alumni. I've got a great opportunity in an emerging market here in Brisbane to set up the tooling, processes, expectations, and internal community as it relates to documentation. It would be remiss of me not to demonstrate my Open Source chops in an industry that may not have much experience in this way of working.  
+
+In other jobs, I'd probably write this in an internal email to a number of lists, but doing that would not embody the idea of "Defaulting to Open", which Red Hat is proud to foster as a company. For this reason, I've shared my thoughts about working at Red Hat right here. For everyone to read. Whether they work there or not.
+
+
