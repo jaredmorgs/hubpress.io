@@ -1,22 +1,42 @@
 = Sometimes You Need To Pay It Forward
-:hp-tags: Red Hat, Open Source
+:hp-tags: Red Hat, Open Source, Career, Opportunity
 :hp-image: covers/open_source.jpg
-:published_at: 2015-07-14
+:published_at: 2015-07-17
 
-When you work for the Defining Open Source Software Company of the 21st Century, you get a different sense of gravity for the work you do. Even if you are in a non-engineering role, the work you do as an associate has an impact on the general Open Source community. In my case, it was Technical Writing. 
+When you work for the _"Defining Open Source Software Company of the 21st Century"_, you get a different sense of gravity for the work you do. Regardless of the work you do, your contributions have a impact on the wider Open Source community. In my case, it was Technical Writing. In other jobs, what you're about to read might be contained in an internal email, but doing that would not embody the idea of _Defaulting to Open_, which Red Hat is proud to foster as a company. For this reason, I've shared my thoughts about working at Red Hat right here.
 
-I got a real crash course introduction to Open Source when I started at Red Hat over six years ago. I was put into a project called Mobicents, which was a recently acquired project as part of the JBoss acquisition. This was a team of veteran open source collaborators, who resisted repeated requests to move their project under the JBoss.org umbrella. 
+== The Beginning
 
-And here I was: a total n00b to Open Source. Not just the idea of what a Meritocracy was, but I'd never even used Linux before. I remember getting walked through how to do something basic like `ls -la` and having serious issues with stuff like spacing in the command, and understanding how tab completion in the terminal worked. And executing commands in a terminal (what, no GUI for this?) was as alien as learning Japanese to me. 
+I got a real crash course introduction to Open Source when I started at Red Hat over six years ago. I was put into a project called Mobicents, which was a recently acquired project as part of the JBoss acquisition. This was a team of veteran open source collaborators. 
 
-It turns out that the challenge working out some pretty tough documentation challenges as a n00b--including some issues with project procedural change management--was the best grounding I could have had in my introduction to Open Source.
+And here I was: a total n00b to Open Source. Not just the idea of what a https://en.wikipedia.org/wiki/Meritocracy[meritocracy] was, but I'd never even used Linux before. I remember getting walked through how to do something basic like `ls -la` and having serious issues with stuff like spacing in the command, and understanding how tab completion in the terminal worked. And executing commands in a terminal (what, no GUI for this?) was as alien as learning Japanese to me. 
 
-I went on to manage many other Middleware docs projects including Red Hat JBoss EAP (including it's Common Criteria certification), Red Hat JBoss Operations Network, Red Hat Enterprise MRG, Red Hat JBoss Portal, and some other projects that were slotted in when some of the other projects were in a quiet period.
+== The Middle
 
-I've met some amazing and inspiring people throughout my career. There are likely too many to mention here in this email, but if you are reading this as a Red Hatter (either current or alumni) you are counted among one of those people. It may sound gushy, but Red Hat is a place where excellence resides. And for those folks that decide to move on, that excellence stays with them as they share what they've learned with other people who may not know that much about Open Source. 
+It turns out that the challenge working out some pretty tough documentation issues as a n00b--including some aspects of project procedural change management--was the best grounding I could have had in my introduction to Open Source. I went on to manage many other Middleware docs projects including Red Hat JBoss EAP (including it's Common Criteria certification), Red Hat JBoss Operations Network, Red Hat Enterprise MRG, Red Hat JBoss Portal, and some other projects that were slotted in when some of the other projects were in a quiet period.
 
-I'm transitioning from an Associate to Alumni. I've got a great opportunity in an emerging market here in Brisbane to set up the tooling, processes, expectations, and internal community as it relates to documentation. It would be remiss of me not to demonstrate my Open Source chops in an industry that may not have much experience in this way of working.  
+I've met some amazing and inspiring people throughout my career. There are likely too many to mention here in this post, but if you are reading this as a Red Hatter (either current or alumni) you are counted among one of those people.   
 
-In other jobs, I'd probably write this in an internal email to a number of lists, but doing that would not embody the idea of "Defaulting to Open", which Red Hat is proud to foster as a company. For this reason, I've shared my thoughts about working at Red Hat right here. For everyone to read. Whether they work there or not.
+== The End
+
+Red Hat is a place where excellence resides. For those folks that decide to move on, that excellence stays with them as they share what they've learned with other people who may not know that much about Open Source.
+
+I've made the decision to transition from an Associate to Alumni. I've been handed a compelling opportunity in the Online Betting market here in Brisbane to set up documentation tooling, processes, and internal community. 
+
+It's a big challenge, but I'm ready to tackle it head-on thanks to the skills (both hard and soft) I've learned during my tenure at Red Hat.
+
+== Appendix A: Open Source and Your Career
+
+Folks reading this will probably know this already: Open Source is a career enabler. _Defaulting to Open_ in everything you do will not only make you a better writer, but it will add serious kudos to your professional profile. 
+
+Volunteering your time in projects on GitHub showcases your work in a portfolio of sorts. Taking initiative to shape a fledgling GitHub project's documentation may lead you down a path you never expected. It's been great working with GitHub developers on projects that are relevant to the documentation technology we use here at Red Hat (like AsciiDoc, and Asciidoctor).
+
+After seeing what is possible with Open Source, there is *no way* I'd go back to proprietary unless there was no other Open Source solution.footnote:[And lets face it: that is very unlikely]
+
+== Appendix B: The End (for real this time)
+
+There is no such thing as "goodbye". It's more like "see you later". 
+
+See you later, Red Hat. It's been a wild ride, and I wouldn't have it any other way.
 
 
