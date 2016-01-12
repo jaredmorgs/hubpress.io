@@ -1,0 +1,20 @@
+{
+  "files": {
+    "default": "default.hbs",
+    "error": "error.hbs",
+    "index": "index.hbs",
+    "page": "page.hbs",
+    "post": "post.hbs",
+    "tag": "tag.hbs",
+    "aside": "partials/aside.hbs",
+    "comments": "partials/comments.hbs",
+    "footer": "partials/footer.hbs",
+    "analytics": "partials/google-analytics.hbs",
+    "meta": "partials/meta.hbs",
+    "navigation": "partials/navigation.hbs",
+    "pagination": "partials/pagination.hbs",
+    "author": "partials/post-author.hbs",
+    "social": "partials/social.hbs"
+  },
+  "version":"1.0.0"
+}
