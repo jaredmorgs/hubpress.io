@@ -1,0 +1,18 @@
+= New Year, New Domain. 
+:hp-tags: 2016, open source,  
+:hp-image: covers/open_source.jpg
+:published_at: 2016-01-12
+
+It's taken me five months, but I've finally activated my new domain name. The old http://jaredmorgs.github.io site should (most likely) redirect to the new http://jaredleonmorgan.net site.
+
+I had been experimenting with a few different static site generators during this time. I've tried Middleman and Awestruct (although not in a very concerted way), and I drifted back to the Jekyll Asciidoctor Quickstart as well, trying out the http://lanyon.getpoole.com/[Lanyon] theme. 
+
+My goal to set up a web page that let me both show my Resume in a single location, and to continue to offer a blog service.
+
+The solution I've chosen? http://hubpress.io/[HubPress]! 
+
+Even though HubPress is one year old this February 2016 (give or take a few months), I still love what this static site generator has done for both the adoption of AsciiDoc and the GitHub Pages static site movement.
+
+There are some pretty wonderful static sites out there using HubPress as their backbone. 
+
+I think with a few tweaks to page layouts in Ghost themes, I should be able to add the Documentation and Resume areas I need into HubPress and continue to use HubPress to manage page content authoring.
