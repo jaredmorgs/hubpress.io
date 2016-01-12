@@ -1,0 +1,42 @@
+:experimental:
+= HubPress, CNAME, and `A` Records
+:hp-tags: hubpress, hosting, domain, CNAME
+:hp-image: covers/open_source.jpg
+:published_at: 2016-01-012
+
+If you want to use a custom domain in HubPress, it is pretty easy to do it. The trick is knowing about the importance of an `A` DNS record pointing to some specific GitHub IP addresses.
+
+== Step 1 - Get a domain
+
+I chose Dreamhost for my domain name registrar, based on some testimonials. 
+
+Pay for a domain and once it is registered and parked, you can continue.
+
+== Step 2 - Add CNAME to HubPress
+
+. Open the HubPress Admin Console
+. Click `Settings`.
+. In the `CNAME` field, type in your domain name. You don't need the `www` prefix.
+. Save your changes.
+
+== Step 3 - Add an `A` Record to your domain name provider
+
+Thanks to the HubPress founder, Anthonny, he found a http://stackoverflow.com/a/20483041/5778580[Stack Overflow Q&A] that worked perfectlly with Dreamhost.
+
+.How to add an A Record for GitHub Pages
+. Go to menu:Domains[Manage Domains] in your webpanel.
+. Locate `yournewdomain.com`, and click `Edit` in the Actions column.
+. Scroll to the bottom of the webpanel and switch to "DNS Only" hosting.
+. Return to menu:Domains[Manage Domains] in your webpanel.
+. Click the `DNS` link below `yournewdomain.com`.
+. Add an `A` record:
+* Name = (blank, nothing)
+* Type = `A`
+* Value = `192.30.252.153`
+
+NOTE: The latest list of IP addresses is available from https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/#configuring-an-a-record-with-your-dns-provider[this GitHub Help article]
+
+The steps—and menu transitions—may differ from provider to provider, but the important thing is to get those GitHub IP addresses added to each `A` record. Once you do that, your domain will redirect perfectly. 
+
+If you are using GitHub to host any other static sites that used your old `username.github.io` address, they will automatically redirect over to `yournewdomain.com` and maintain their absolute path, which is pretty neat. No dead links for your disparate sites that may have got quite a following. Now all under the one managed domain.
+
