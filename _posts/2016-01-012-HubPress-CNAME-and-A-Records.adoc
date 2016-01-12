@@ -1,8 +1,8 @@
-:experimental:
 = HubPress, CNAME, and `A` Records
 :hp-tags: hubpress, hosting, domain, CNAME
 :hp-image: covers/open_source.jpg
 :published_at: 2016-01-012
+:experimental:
 
 If you want to use a custom domain in HubPress, it is pretty easy to do it. The trick is knowing about the importance of an `A` DNS record pointing to some specific GitHub IP addresses.
 
