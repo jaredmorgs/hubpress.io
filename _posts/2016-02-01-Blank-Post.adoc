@@ -1,13 +1,9 @@
-= Hanging Up My Hat
-:hp-tags: Red Hat, Resignation 
+= Blank Post
+:hp-tags: 
 :hp-image: covers/open_source.jpg
-:published_at: 2015-07-14
+:published_at: 2016-02-01
 
-When you work for the Defining Open Source Software Company of the 21st Century, you get a different sense of gravity for the work you do. 
-
-For me, you also get a desire to teach other companies about how "Defaulting to Open" in everything you do has great benefit. 
-
-In other jobs, I'd probably write this in an internal email to a number of lists, but doing that would not embody the sentiment of "Defaulting to Open". So I'm going to share my thoughts about working at Red Hat right here. For everyone to read. Whether they work there or not.
+Thoughts go here.
 
 
 
