@@ -5,7 +5,11 @@
 
 == Happy New Year!
 
-It's taken me five months, but I've finally activated my new domain name. The old http://jaredmorgs.github.io site should (most likely) redirect to the new http://jaredleonmorgan.net site.
+It's taken me five months, but I've finally activated my new domain name. 
+
+The old http://jaredmorgs.github.io site should now redirect to the new http://jaredleonmorgan.net site.
+
+Any other sites like the previous home of the Pinball Arcade Android Users Guide (http://jaredmorgs.github.io/Pinball_Arcade_Users_Guide_Android) should also switch over automatically.
 
 == Static Site Experimentation
 
