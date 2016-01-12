@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HubPress, CNAME, and &#x60;A&#x60; Records</title>
+    <meta name="description" content="" />
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//jaredleonmorgan.net/themes/Saga/assets/css/style.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//jaredleonmorgan.net/themes/Saga/assets/css/animate.min.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//jaredleonmorgan.net/themes/Saga/favicon.ico" rel="shortcut icon">
+    <link rel="canonical" href="http://jaredleonmorgan.net2016-01-012-HubPress-CNAME-and-A-Records.adoc" />
+    
+    <meta property="og:site_name" content="Jared Morgan (jaredmorgs) " />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HubPress, CNAME, and &#x60;A&#x60; Records" />
+    <meta property="og:description" content="If you want to use a custom domain in HubPress, it is pretty easy to do it. The trick is knowing about the importance of an A DNS record pointing to some specific GitHub IP addresses. Step 1 - Get..." />
+    <meta property="og:url" content="http://jaredleonmorgan.net2016-01-012-HubPress-CNAME-and-A-Records.adoc" />
+    <meta property="og:image" content="http://jaredleonmorgan.net/images/covers/open_source.jpg" />
+    <meta property="article:published_time" content="2016-01-11T14:00:00.000Z" />
+    <meta property="article:modified_time" content="2016-01-12T12:02:17.480Z" />
+    <meta property="article:tag" content="hubpress" />
+    <meta property="article:tag" content="hosting" />
+    <meta property="article:tag" content="domain" />
+    <meta property="article:tag" content="CNAME" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HubPress, CNAME, and &#x60;A&#x60; Records" />
+    <meta name="twitter:description" content="If you want to use a custom domain in HubPress, it is pretty easy to do it. The trick is knowing about the importance of an A DNS record pointing to some specific GitHub IP addresses. Step 1 - Get..." />
+    <meta name="twitter:url" content="http://jaredleonmorgan.net2016-01-012-HubPress-CNAME-and-A-Records.adoc" />
+    <meta name="twitter:image:src" content="http://jaredleonmorgan.net/images/covers/open_source.jpg" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Jared Morgan (jaredmorgs) ",
+    "author": {
+        "@type": "Person",
+        "name": "Jared Morgan",
+        "image": "https://avatars.githubusercontent.com/u/952793?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://jaredmorgs.github.io"
+    },
+    "headline": "HubPress, CNAME, and &#x60;A&#x60; Records",
+    "url": "http://jaredleonmorgan.net2016-01-012-HubPress-CNAME-and-A-Records.adoc",
+    "datePublished": "2016-01-11T14:00:00.000Z",
+    "dateModified": "2016-01-12T12:02:17.480Z",
+    "image": "http://jaredleonmorgan.net/images/covers/open_source.jpg",
+    "keywords": "hubpress,  hosting,  domain,  CNAME",
+    "description": "If you want to use a custom domain in HubPress, it is pretty easy to do it. The trick is knowing about the importance of an A DNS record pointing to some specific GitHub IP addresses. Step 1 - Get..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Jared Morgan (jaredmorgs) " href="http://jaredleonmorgan.net/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-hubpress tag-hosting tag-domain tag-CNAME">
+    <header id="header" class="animated fadeIn" style="background-image: url(http://jaredleonmorgan.net/images/covers/open_source.jpg)">
+    <div class="header-background">
+    <section class="blog-content">
+        <a id="site-url" class="blog-title" href="http://jaredleonmorgan.net">Jared Morgan (jaredmorgs) </a>
+        <span class="blog-description">Co-host of the BlahCade Podcast. Technical Writer. Open Source Contributor.</span>
+        <nav class="links fadeIn animated">
+            <ul>
+                <!-- <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li> -->
+        
+            </ul>
+        </nav>
+    </section>
+    <section class="header-content">
+        <h1 class="post-title animated fadeInUp">HubPress, CNAME, and &#x60;A&#x60; Records</h1>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1452520800" datetime="2016-01-12T00:00" title="12 January 2016">2016-01-12 00:00:00<ago class="ago"></time></span>
+            <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="http://jaredleonmorgan.net/tag/hubpress">hubpress</a>, <a href="http://jaredleonmorgan.net/tag/hosting"> hosting</a>, <a href="http://jaredleonmorgan.net/tag/domain"> domain</a>, <a href="http://jaredleonmorgan.net/tag/CNAME"> CNAME</a></span>
+            <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="">Jared Morgan</a></span></span>
+    </section>
+    </div>
+</header>
+<main id="main" class="content">
+    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-hubpress tag-hosting tag-domain tag-CNAME">
+        <section class="post-content">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you want to use a custom domain in HubPress, it is pretty easy to do it. The trick is knowing about the importance of an <code>A</code> DNS record pointing to some specific GitHub IP addresses.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_1_get_a_domain">Step 1 - Get a domain</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I chose Dreamhost for my domain name registrar, based on some testimonials.</p>
+</div>
+<div class="paragraph">
+<p>Pay for a domain and once it is registered and parked, you can continue.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_2_add_cname_to_hubpress">Step 2 - Add CNAME to HubPress</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the HubPress Admin Console</p>
+</li>
+<li>
+<p>Click <code>Settings</code>.</p>
+</li>
+<li>
+<p>In the <code>CNAME</code> field, type in your domain name. You don&#8217;t need the <code>www</code> prefix.</p>
+</li>
+<li>
+<p>Save your changes.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_3_add_an_code_a_code_record_to_your_domain_name_provider">Step 3 - Add an <code>A</code> Record to your domain name provider</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Thanks to the HubPress founder, Anthonny, he found a <a href="http://stackoverflow.com/a/20483041/5778580">Stack Overflow Q&amp;A</a> that worked perfectlly with Dreamhost.</p>
+</div>
+<div class="olist arabic">
+<div class="title">How to add an A Record for GitHub Pages</div>
+<ol class="arabic">
+<li>
+<p>Go to <span class="menuseq"><span class="menu">Domains</span>&#160;&#9656; <span class="menuitem">Manage Domains</span></span> in your webpanel.</p>
+</li>
+<li>
+<p>Locate <code>yournewdomain.com</code>, and click <code>Edit</code> in the Actions column.</p>
+</li>
+<li>
+<p>Scroll to the bottom of the webpanel and switch to "DNS Only" hosting.</p>
+</li>
+<li>
+<p>Return to <span class="menuseq"><span class="menu">Domains</span>&#160;&#9656; <span class="menuitem">Manage Domains</span></span> in your webpanel.</p>
+</li>
+<li>
+<p>Click the <code>DNS</code> link below <code>yournewdomain.com</code>.</p>
+</li>
+<li>
+<p>Add an <code>A</code> record:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Name = (blank, nothing)</p>
+</li>
+<li>
+<p>Type = <code>A</code></p>
+</li>
+<li>
+<p>Value = <code>192.30.252.153</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The latest list of IP addresses is available from <a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/#configuring-an-a-record-with-your-dns-provider">this GitHub Help article</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The steps—and menu transitions—may differ from provider to provider, but the important thing is to get those GitHub IP addresses added to each <code>A</code> record. Once you do that, your domain will redirect perfectly.</p>
+</div>
+<div class="paragraph">
+<p>If you are using GitHub to host any other static sites that used your old <code>username.github.io</code> address, they will automatically redirect over to <code>yournewdomain.com</code> and maintain their absolute path, which is pretty neat. No dead links for your disparate sites that may have got quite a following. Now all under the one managed domain.</p>
+</div>
+</div>
+</div>
+        </section>
+
+    
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jaredmorgs'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    
+    </article>
+
+</main>
+    <footer class="animated fadeIn" id="footer">
+        <section class="colophon">
+          <section class="copyright">Copyright &copy; <span itemprop="copyrightHolder">Jared Morgan (jaredmorgs) </span>. <span rel="license">All Rights Reserved</span>.</section>
+          <section class="poweredby">Published with <a class="icon-ghost" href="http://hubpress.io">HubPress</a></section>
+        </section>
+        <section class="bottom">
+          <section class="attribution">
+            <a href="http://github.com/Reedyn/Saga">Built with <i class="fa fa-heart"></i> and Free and Open-Source Software</a>.
+          </section>
+        </section>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+    <script src="//jaredleonmorgan.net/themes/Saga/assets/js/scripts.js?v=1.0.0"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58317734-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
