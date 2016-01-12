@@ -1,9 +1,0 @@
-= Blank Post
-:hp-tags: 
-:hp-image: covers/open_source.jpg
-:published_at: 2016-02-01
-
-Thoughts go here.
-
-
-
