@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RAML for Managing the API Lifecycle</title>
+    <meta name="description" content="" />
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//jaredleonmorgan.net/themes/Saga/assets/css/style.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//jaredleonmorgan.net/themes/Saga/assets/css/animate.min.css?v=1.0.0" rel="stylesheet" type="text/css">
+    <link href="//jaredleonmorgan.net/themes/Saga/favicon.ico" rel="shortcut icon">
+    <link rel="canonical" href="http://jaredleonmorgan.net/2016/01/16/RAML-for-Managing-the-API-Lifecycle.html" />
+    
+    <meta property="og:site_name" content="Jared Morgan (jaredmorgs) " />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RAML for Managing the API Lifecycle" />
+    <meta property="og:description" content="I&amp;#8217;ve already talked about Tom Johnson&amp;#8217;s podcast series I&amp;#8217;d Rather Be Writing, where he shares his thoughts and experiences about writing API documentation in the burgeoning San Francisco technology and start-up scene. On a..." />
+    <meta property="og:url" content="http://jaredleonmorgan.net/2016/01/16/RAML-for-Managing-the-API-Lifecycle.html" />
+    <meta property="og:image" content="http://jaredleonmorgan.net/images/covers/ideas.jpg" />
+    <meta property="article:published_time" content="2016-01-15T14:00:00.000Z" />
+    <meta property="article:modified_time" content="2016-01-16T01:16:25.353Z" />
+    <meta property="article:tag" content="tech writing" />
+    <meta property="article:tag" content="API" />
+    <meta property="article:tag" content="RAML" />
+    <meta property="article:tag" content="podcasts" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RAML for Managing the API Lifecycle" />
+    <meta name="twitter:description" content="I&amp;#8217;ve already talked about Tom Johnson&amp;#8217;s podcast series I&amp;#8217;d Rather Be Writing, where he shares his thoughts and experiences about writing API documentation in the burgeoning San Francisco technology and start-up scene. On a..." />
+    <meta name="twitter:url" content="http://jaredleonmorgan.net/2016/01/16/RAML-for-Managing-the-API-Lifecycle.html" />
+    <meta name="twitter:image:src" content="http://jaredleonmorgan.net/images/covers/ideas.jpg" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Jared Morgan (jaredmorgs) ",
+    "author": {
+        "@type": "Person",
+        "name": "Jared Morgan",
+        "image": "https://avatars.githubusercontent.com/u/952793?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://jaredmorgs.github.io"
+    },
+    "headline": "RAML for Managing the API Lifecycle",
+    "url": "http://jaredleonmorgan.net/2016/01/16/RAML-for-Managing-the-API-Lifecycle.html",
+    "datePublished": "2016-01-15T14:00:00.000Z",
+    "dateModified": "2016-01-16T01:16:25.353Z",
+    "image": "http://jaredleonmorgan.net/images/covers/ideas.jpg",
+    "keywords": "tech writing,  API,  RAML,  podcasts",
+    "description": "I&amp;#8217;ve already talked about Tom Johnson&amp;#8217;s podcast series I&amp;#8217;d Rather Be Writing, where he shares his thoughts and experiences about writing API documentation in the burgeoning San Francisco technology and start-up scene. On a..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Jared Morgan (jaredmorgs) " href="http://jaredleonmorgan.net/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-tech-writing tag-API tag-RAML tag-podcasts">
+    <header id="header" class="animated fadeIn" style="background-image: url(http://jaredleonmorgan.net/images/covers/ideas.jpg)">
+    <div class="header-background">
+    <section class="blog-content">
+        <a id="site-url" class="blog-title" href="http://jaredleonmorgan.net">Jared Morgan (jaredmorgs) </a>
+        <span class="blog-description">Co-host of the BlahCade Podcast. Technical Writer. Open Source Contributor.</span>
+        <nav class="links fadeIn animated">
+            <ul>
+                <!-- <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li> -->
+        
+            </ul>
+        </nav>
+    </section>
+    <section class="header-content">
+        <h1 class="post-title animated fadeInUp">RAML for Managing the API Lifecycle</h1>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1452866400" datetime="2016-01-16T00:00" title="16 January 2016">2016-01-16 00:00:00<ago class="ago"></time></span>
+            <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="http://jaredleonmorgan.net/tag/tech-writing">tech writing</a>, <a href="http://jaredleonmorgan.net/tag/API"> API</a>, <a href="http://jaredleonmorgan.net/tag/RAML"> RAML</a>, <a href="http://jaredleonmorgan.net/tag/podcasts"> podcasts</a></span>
+            <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="">Jared Morgan</a></span></span>
+    </section>
+    </div>
+</header>
+<main id="main" class="content">
+    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-tech-writing tag-API tag-RAML tag-podcasts">
+        <section class="post-content">
+            <div class="paragraph">
+<p>I&#8217;ve already talked about Tom Johnson&#8217;s podcast series <em>I&#8217;d Rather Be Writing</em>, where he shares his thoughts and experiences about writing API documentation in the burgeoning San Francisco technology and start-up scene.</p>
+</div>
+<div class="paragraph">
+<p>On a <a href="http://idratherbewriting.com/2015/10/12/spec-driven-design-podcast-michael-stowe/">recent podcast</a>, Tom talked with Michael Stowe, who wrote <em>Undisturbed REST: The guide to designing the perfect API</em>.</p>
+</div>
+<div class="paragraph">
+<p>They introduced the concept of the RESTful API Modeling Langage (RAML), which you can read more about on <a href="http://raml.org/" class="bare">http://raml.org/</a></p>
+</div>
+<div class="paragraph">
+<p>What makes RAML worth considering is that it is actually a full API lifecycle tool. It lets you design your API design without actually coding anything, but also create a fully functional mock for customers, partners, or internal engineers to review and build from.</p>
+</div>
+<div class="paragraph">
+<p>If used by the whole organisation, you can avoid a lot of technical debt by getting all parties to agree on the design of the API <strong>before</strong> you task any developers with actually writing the endpoints.</p>
+</div>
+<div class="paragraph">
+<p>The advantage for documentarians, is that RAML also has our back&#8217;s covered. Because documentation is a crucial part of the API lifecycle, writing the spec for the API from the start bascially means that it is documented.</p>
+</div>
+<div class="paragraph">
+<p>If you are starting out with API technology in your company, consider adopting RAML to control the API lifecycle.</p>
+</div>
+        </section>
+
+    
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jaredmorgs'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    
+    </article>
+
+</main>
+    <footer class="animated fadeIn" id="footer">
+        <section class="colophon">
+          <section class="copyright">Copyright &copy; <span itemprop="copyrightHolder">Jared Morgan (jaredmorgs) </span>. <span rel="license">All Rights Reserved</span>.</section>
+          <section class="poweredby">Published with <a class="icon-ghost" href="http://hubpress.io">HubPress</a></section>
+        </section>
+        <section class="bottom">
+          <section class="attribution">
+            <a href="http://github.com/Reedyn/Saga">Built with <i class="fa fa-heart"></i> and Free and Open-Source Software</a>.
+          </section>
+        </section>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+    <script src="//jaredleonmorgan.net/themes/Saga/assets/js/scripts.js?v=1.0.0"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58317734-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
