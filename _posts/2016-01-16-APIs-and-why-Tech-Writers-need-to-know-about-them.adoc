@@ -1,6 +1,6 @@
 = APIs, and why Tech Writers need to know about them.
 :hp-tags: tech writing, API, podcasts 
-:hp-image: covers/android.jpg
+:hp-image: covers/ideas.jpg
 :published_at: 2016-01-16
 
 I'm finding more and more that consuming podcasts is a more accessible way to learn about things. I find I don't have time to sit down and read a book, but it is easy to put a podcast on while commuting or walking around at lunch. 
