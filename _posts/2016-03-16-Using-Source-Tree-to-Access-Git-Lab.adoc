@@ -20,7 +20,6 @@ The basic process to follow is outlined below:
 For some folks, that might be enough of a clue to get them on the right path. 
 If this has not helped you, read on for step-by-step instructions.
 
-[[Generate_SSH]]
 === Generate an SSH Key
 
 GitLab offers SSH as a method to handle authentication between the master and remote repositories.
@@ -87,7 +86,7 @@ If you are migrating all your repositories over from another VCS to GitLab, chan
 You don't need to delete them all and check them out again through GitLab. Update the remote origin to point to the new GitLab SSH path and you'll be back in business.
 
 .Change Upstream Repository Information in SourceTree
-. Load {gitlab}
+. Load https://gitlab.com in your browser.
 . Navigate to the GitLab repository you want to update locally.
 . Copy the `SSH` path shown in the screen.
 +
