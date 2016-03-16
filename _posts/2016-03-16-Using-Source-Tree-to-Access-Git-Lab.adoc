@@ -1,5 +1,5 @@
 = Using SourceTree to Access GitLab
-:hp-tags: open, source, bitbucket, stash, gitlab
+:hp-tags: open, source, bitbucket, stash, gitlab, vcs
 :hp-image: covers/open_source.jpg
 :toc: macro
 
