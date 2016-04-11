@@ -1,0 +1,26 @@
+= Being Switzerland Has Its Advantages
+:hp-tags: tech writing,  
+:hp-image: covers/ideas.jpg
+
+If you adopt a neutral and approachable presence —or "Be the Switzerland Of Your Organisation", if you will— you can act as another "interface layer" between departments. 
+Being neutral, and approachable makes folks that may have pre-conceived ideas about other departments drop their guard and open up to reveal sometimes startling revelations about how a product is used. 
+
+One recent case where I adopted the Switzerland Approach helped tremendously is a situation of "mistaken identity" of a group of options in the User Interface (UI). 
+
+The options were part of a larger function in the UI that allowed conditions to be set against certain events. The problem was the group label (let's call it `Zones`) remained constant while the intent of the conditions (let's call them `Limits`) outgrew the UI nomenclature. What started out as a small, logical nomenclature grew into something so overloaded in meaning that it was confusing multiple stakeholders.
+
+I was on my way back from the bathroom and happened to see one of our internal customers (the end-user of the product), who showed me how other parts of this system worked during my staff orientation. 
+I decided to do something right then that in hindsight seems fundamental, but is something developers sometimes don't feel comfortable doing. 
+
+*Don't ask _why_ something is the way it is. Ask someone _how_ they actually use it*
+
+As I listened to my SME, it became crystal clear _why_ the `Zones` list was in that part of the interface, how it was used to set `Limits`, and why those `Limits` may have evolved into something no longer accurate in the UI.
+Another crucial piece of information was that the `Limits` functioned more like labels for importing events. The information about the limits were not actually stored in the system, but were part of the SME's departmental Knowledgebase.
+
+After getting a copy of the limits emailed to me with no more than a "Could I get a copy of those, please?", I quite literaly ran upstairs and told my developers what I just learned verbally. 
+Some developers made assumptions that the `Zones` related to some arbitrary geographical location, but as I began explaining the relationship was actually just labels for `Limits` based on the limits document, you could see them shaking their heads in disbelief that they hadn't worked it out sooner.
+They also told me that based on this information, they would need to make some minor architectural changes to parts of the system to reflect the newly-learned nomenclature. 
+
+My advice to any Technical Writer wanting to make a difference is simple: 
+
+
