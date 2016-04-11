@@ -1,5 +1,5 @@
 = Being Switzerland Has Its Advantages
-:hp-tags: Tech Writing,  
+:hp-tags: Tech, Writing 
 :hp-image: covers/ideas.jpg
 
 "Becoming the Switzerland of your Organisation" may evolve your Technical Writing career into an invaluable interface layer between departments.
