@@ -1,4 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jared Morgan (jaredmorgs) ]]></title><description><![CDATA[Technical Writer. Open Source Contributor. Co-host of the BlahCade Podcast. ]]></description><link>http://jaredleonmorgan.net</link><image><url>/images/covers/pinball.jpg</url><title>Jared Morgan (jaredmorgs) </title><link>http://jaredleonmorgan.net</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 08 Nov 2016 04:19:59 GMT</lastBuildDate><atom:link href="http://jaredleonmorgan.net/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[UBank Has NFC About Correct User Feedback]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jared Morgan (jaredmorgs) ]]></title><description><![CDATA[Technical Writer. Open Source Contributor. Co-host of the BlahCade Podcast. ]]></description><link>http://jaredleonmorgan.net</link><image><url>/images/covers/pinball.jpg</url><title>Jared Morgan (jaredmorgs) </title><link>http://jaredleonmorgan.net</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 08 Nov 2016 22:30:36 GMT</lastBuildDate><atom:link href="http://jaredleonmorgan.net/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Google Yelp, or how Google Local Guides just became more relevant]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>I was sent an email yesterday outlining changes to the Yelp Communities program.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="http://jaredleonmorgan.net/images/Yelp_Communities_Dead.png" alt="Yelp Communities Dead.png" width="400px">
+</div>
+</div>
+<div class="paragraph">
+<p>The Communities program will be discontinued outside of the US.
+That means that the Yelp Community Managers outside of the US no longer exist.
+But more importantly, it means diminished recognition for the voluntary work you do for the ecosystem</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_yelp_that_was">1. The Yelp That Was</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A nice perk with Yelp was that you were invited to free hospitality events, and it made you feel a bit special. And this is important.</p>
+</div>
+<div class="paragraph">
+<p>The thing with products like Yelp is that as a user, you are providing free content for their product. You write reviews and populate their ecosystem with information. Basically, user adoption and participation drive the success of the platform.</p>
+</div>
+<div class="paragraph">
+<p>I often couldn&#8217;t go to the events because they were on in the evening and they didn&#8217;t fit into my family life. but that didn&#8217;t matter. The fact they were offered was the important thing.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_local_guides_as_a_disruptor">2. Local Guides as a Disruptor</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Enter <a href="https://www.google.com/local/guides/">Google Local Guides</a>.</p>
+</div>
+<div class="paragraph">
+<p>The program lets users plug into the Google Maps app, and contribute photos, reviews and confirm info about businesses and public venues. It&#8217;s basically Google Yelp.</p>
+</div>
+<div class="paragraph">
+<p>The reason why I&#8217;ve begun to prefer Local Guides over Yelp is the seamless integration. If you navigate to a restaurant, and you begin taking photos of your food, you get a push notification suggesting you might like to update the business with the photo.</p>
+</div>
+<div class="paragraph">
+<p>Local Guides is heavily gamified, in that you have a Level system and <a href="https://www.google.com/local/guides/benefits/index.html">get points</a> for five different content types:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Uploading photos</p>
+</li>
+<li>
+<p>Sharing reviews</p>
+</li>
+<li>
+<p>Adding new places</p>
+</li>
+<li>
+<p>Fixing information</p>
+</li>
+<li>
+<p>Answering questions</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each week you get a summary of how users have been consuming your content, and it is kind of staggering the reach your photos and reviews have.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_timeliness_is_key">3. Timeliness is Key</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once you get your ranking up above Level 2, your "trust" level also rises. This is kind of the same as Yelp and it&#8217;s "Elite" program.</p>
+</div>
+<div class="paragraph">
+<p>Because you are trusted more as a Google content creator, when you contribute a change to a business your changes get published quicker. And if you submit a new business listing, it gets approved much faster.</p>
+</div>
+<div class="paragraph">
+<p>Recently I added a listing for a new business over in Newmarket, called KoKobana Superfood Cafe.</p>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.0411386550322!2d153.0064174158907!3d-27.436828621876366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915767476ed5dd%3A0xbf8398cb7b0e271f!2sKoKobana+Superfood+Cafe!5e0!3m2!1sen!2sau!4v1478642546539" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="paragraph">
+<p>On Google, my submission was available about 12hrs after I filled in the mobile form within maps. On Yelp, it took nearly a week for the listing o be approved. And this was with me as an Yelp Elite member.</p>
+</div>
+<div class="paragraph">
+<p>This user experience was the final straw for me as a Yelp contributor. Why would I take the time to add a listing when it takes nearly a week to publish the thing? I can&#8217;t begin interacting with the listing like adding photos or updating details I may have got wrong during creation. It&#8217;s just plain frustrating.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_devils_advocate">4. Devils Advocate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Of course, as a Google Local Guides you are basically a data surveyor. You add metadata about things Google values in products they own. They give you a cookie.</p>
+</div>
+<div class="paragraph">
+<p>And it is probably fair to say that every contribution you make contributes to the metdata Google knows about you, and your dining and entertainment preferences. Probably more, in fact.</p>
+</div>
+<div class="paragraph">
+<p>But I was just awareded 100GB of Drive storage for a year for reaching <strong>Level 4</strong> status. A reward that I can use daily, and fits into my family and time situation.
+Google already knows everything about me anyway, so what burgers I like doesn&#8217;t seem like too much of an intrusion.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary">5. Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Rewarding and recognising your content creators with even something small but tangible is a sure-fire way of keeping them loyal to your brand.</p>
+</div>
+<div class="paragraph">
+<p>Take away incentives to contribute for your users, and you risk collapsing the framework that makes your service successful.</p>
+</div>
+<div class="paragraph">
+<p>I bet I can level up to <strong>Level 5</strong> when I&#8217;m over in Europe. ;)</p>
+</div>
+</div>
+</div>]]></description><link>http://jaredleonmorgan.net/2016/11/09/Google-Yelp-or-how-Google-Local-Guides-just-became-more-relevant.html</link><guid isPermaLink="true">http://jaredleonmorgan.net/2016/11/09/Google-Yelp-or-how-Google-Local-Guides-just-became-more-relevant.html</guid><category><![CDATA[Tech]]></category><category><![CDATA[ Writing]]></category><category><![CDATA[ Users]]></category><category><![CDATA[ Apps]]></category><dc:creator><![CDATA[Jared Morgan]]></dc:creator><pubDate>Wed, 09 Nov 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[UBank Has NFC About Correct User Feedback]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>I&#8217;ve got a Google Nexus 6p which has all the things a current-gen handset should have. NFC is standard as it was on my Nexus 5 two years earlier, and the operating system is Android 7.1.1 (currently in Beta).</p>
