@@ -1,0 +1,122 @@
+= UBank Has NFC About Correct User Feedback
+:hp-tags: Tech, Writing, Users, Apps  
+:sectnums:
+
+I've got a Google Nexus 6p which has all the things a current-gen handset should have. NFC is standard as it was on my Nexus 5 two years earlier, and the operating system is Android 7.1.1 (currently in Beta).
+
+I've wanted to try out contactless payments through my phone for a while now, and noticed that UBank offered this function through their app.
+
+What I discovered when trying to set this feature up made me question the ability of UBank to understand a typical user of their banking app for anything other than transferring money around.
+
+== The Problem 
+
+The information shown when the app was unable to set up Mobile Payments was too technical for the audience. The real issue is that the information was just plain wrong.
+
+image::UBank_NFC_Nope.png[width=400px]
+
+When I loaded the `Mobile Payments` menu in the app, I saw a poor implementation of reading the device's `build.prop` and other common system files to determine device state and hardware capabilities.
+
+Let's break it down per message.
+
+=== Device Incompatible
+
+.Device Incompatible
+image::UBank_NFC_Device.png[width=400px]
+
+The incompatibility detected was that the operating system was not greater than "Android 4.4 (KIt Kat)".
+
+I'm running Android 7.1.1, which is well above this requirement.
+
+From a user's perspective, this makes the app look erroneous, which is not good for a banking app. 
+
+Not only is there a typo in `KIt Kat`, the app can't even get my Android version? Really?
+
+=== Not Supported
+
+.Not Supported
+image::UBank_NFC_Not_supported.png[width=400px]
+
+This is already iterated above in <<Figure 1>>. I don't need to see this again. I'm already frustrated enough as it is.
+
+=== OS Compatibility
+
+.OS: compatibility
+image::UBank_NFC_OS_Compat.png[width=400px]
+
+Failure to detect the correct Android version appears to be the issue here again. 
+
+It may be the fact I'm participating in the Android Beta Channel program, but that is not clear from this message. All I feel as a user is "UBank is *wrong*".
+
+=== CPU
+
+.CPU
+image::UBank_NFC_CPU.png[width=400px]
+
+So you need an ARM-based CPU to use payments?
+
+You mean, the https://en.wikipedia.org/wiki/Nexus_6P#Hardware[Snapdragon ARM Cortex-A57 CPUs] that are actually used in my device?  
+
+You can imagine what I'm thinking as a user at this point. The message actually suggests that I go off to the internet and try hunting for the type of processor my phone uses, just so I can try and troubleshoot this issue?
+
+=== NFC
+
+.NFC
+image::UBank_NFC_NFC.png[width=400px]
+
+You effing what?
+
+Not only is my device equipped with an NFC element, it is turned on. Right now. 
+
+"WHY CAN'T YOU SEE IT?", I yelled at my screen, hoping the developers of the banking app would get a burning sensation on the back of their necks. 
+
+=== Rooted
+
+.Rooted
+image::UBank_NFC_Rooted.png[width=400px]
+
+Yes. Yes! This part of your app truly is Rooted. 
+
+However my phone is not. 
+
+The Bootloader is unlocked, but I do not have any superuser binary installed on this hardware. 
+
+So, *wrong*. Again!
+
+== Summary
+
+I can attempt to summarise this issue as follows:
+
+* the app doesn't know about Android 7.1.1 because it isn't an officially supported Android release. Yet.
+* because there is no record of this Android version in the app's database, it can't verify the release
+* It takes a best guess about what might be going on, and gets it horribly wrong. 
+
+=== Product Owner
+
+From a Product Owner's perspective:
+
+* it doesn't match the tone of the rest of the app in the information it provides.
+* when a device is analysed and determined not to be compatible, there is *too much* information for the average Android user to parse.
+* this screen will probably result in a Help Desk call if users encounter the "Nope" screen like this.
+
+=== Technical Writer
+
+From a Technical Writer's perspective:
+
+* the copy needs to be reviewed from a spelling and consistency perspective.
+* the information needs to be terse, and correct for the audience.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
