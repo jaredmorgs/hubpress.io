@@ -1,20 +1,20 @@
 = UBank Has NFC About Correct User Feedback
-:hp-tags: Tech, Writing, Users,  
+:hp-tags: Tech, Writing, Users, Apps  
 :hp-image: covers/android.jpg
 
 I've got a Google Nexus 6p which has all the things a current-gen handset should have. NFC is standard as it was on my Nexus 5 two years earlier, and the operating system is Android 7.1.1 (currently in Beta).
 
 I've wanted to try out contactless payments through my phone for a while now, and noticed that UBank offered this function through their app.
 
-What I discovered when trying to set this feature up made me question the ability of UBank to understand a typical user of their banking app.
+What I discovered when trying to set this feature up made me question the ability of UBank to understand a typical user of their banking app for anything other than transferring money around.
 
 == The Problem 
 
-The information given to the user was arguably too technical for the audience. The real issue is that the information was just plain wrong.
+The information shown when the app was unable to set up Mobile Payments was too technical for the audience. The real issue is that the information was just plain wrong.
 
 image::UBank_NFC_Nope.png[width=400px]
 
-When I loaded the `Mobile Payments` menu in the app, I saw a poor implementation of reading the device's `build.prop` to determine system capabilities.
+When I loaded the `Mobile Payments` menu in the app, I saw a poor implementation of reading the device's `build.prop` and other common system files to determine device state and hardware capabilities.
 
 Let's break it down per message.
 
