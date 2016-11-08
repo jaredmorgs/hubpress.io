@@ -8,7 +8,7 @@ image::Yelp_Communities_Dead.png[width=400px]
 
 The Communities program will be discontinued outside of the US. 
 That means that the Yelp Community Managers outside of the US no longer exist. 
-But more importantly, it means diminished recognition for the voluntary work you do for the ecosystem
+But more importantly, it means diminished recognition for the voluntary work you do for the ecosystem.
 
 == The Yelp That Was
 
@@ -16,7 +16,7 @@ A nice perk with Yelp was that you were invited to free hospitality events, and 
 
 The thing with products like Yelp is that as a user, you are providing free content for their product. You write reviews and populate their ecosystem with information. Basically, user adoption and participation drive the success of the platform.
 
-I often couldn't go to the events because they were on in the evening and they didn't fit into my family life. but that didn't matter. The fact they were offered was the important thing.
+I often couldn't go to the events because they were on in the evening and they didn't fit into my family life. But that didn't matter. The fact they were offered was the important thing.
 
 == Local Guides as a Disruptor
 
