@@ -1,6 +1,6 @@
 = UBank Has NFC About Correct User Feedback
 :hp-tags: Tech, Writing, Users, Apps  
-:hp-image: covers/android.jpg
+:sectnums:
 
 I've got a Google Nexus 6p which has all the things a current-gen handset should have. NFC is standard as it was on my Nexus 5 two years earlier, and the operating system is Android 7.1.1 (currently in Beta).
 
