@@ -1,0 +1,75 @@
+= Google Yelp, or how Google Local Guides just became more relevant
+:hp-tags: Tech, Writing, Users, Apps  
+:sectnums:
+
+I was sent an email yesterday outlining changes to the Yelp Communities program. 
+
+image::Yelp_Communities_Dead.png[width=400px]
+
+The Communities program will be discontinued outside of the US. 
+That means that the Yelp Community Managers outside of the US no longer exist. 
+But more importantly, it means diminished recognition for the voluntary work you do for the ecosystem
+
+== The Yelp That Was
+
+A nice perk with Yelp was that you were invited to free hospitality events, and it made you feel a bit special. And this is important. 
+
+The thing with products like Yelp is that as a user, you are providing free content for their product. You write reviews and populate their ecosystem with information. Basically, user adoption and participation drive the success of the platform.
+
+I often couldn't go to the events because they were on in the evening and they didn't fit into my family life. but that didn't matter. The fact they were offered was the important thing.
+
+== Local Guides as a Disruptor
+
+Enter https://www.google.com/local/guides/[Google Local Guides].
+
+The program lets users plug into the Google Maps app, and contribute photos, reviews and confirm info about businesses and public venues. It's basically Google Yelp. 
+
+The reason why I've begun to prefer Local Guides over Yelp is the seamless integration. If you navigate to a restaurant, and you begin taking photos of your food, you get a push notification suggesting you might like to update the business with the photo.
+
+Local Guides is heavily gamified, in that you have a Level system and https://www.google.com/local/guides/benefits/index.html[get points] for five different content types:
+
+* Uploading photos
+* Sharing reviews
+* Adding new places
+* Fixing information
+* Answering questions
+
+Each week you get a summary of how users have been consuming your content, and it is kind of staggering the reach your photos and reviews have.
+
+== Timeliness is Key
+
+Once you get your ranking up above Level 2, your "trust" level also rises. This is kind of the same as Yelp and it's "Elite" program. 
+
+Because you are trusted more as a Google content creator, when you contribute a change to a business your changes get published quicker. And if you submit a new business listing, it gets approved much faster. 
+
+Recently I added a listing for a new business over in Newmarket, called KoKobana Superfood Cafe. 
+
+++++
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.0411386550322!2d153.0064174158907!3d-27.436828621876366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915767476ed5dd%3A0xbf8398cb7b0e271f!2sKoKobana+Superfood+Cafe!5e0!3m2!1sen!2sau!4v1478642546539" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+++++
+
+On Google, my submission was available about 12hrs after I filled in the mobile form within maps. On Yelp, it took nearly a week for the listing o be approved. And this was with me as an Yelp Elite member. 
+
+This user experience was the final straw for me as a Yelp contributor. Why would I take the time to add a listing when it takes nearly a week to publish the thing? I can't begin interacting with the listing like adding photos or updating details I may have got wrong during creation. It's just plain frustrating.
+
+== Devils Advocate
+
+Of course, as a Google Local Guides you are basically a data surveyor. You add metadata about things Google values in products they own. They give you a cookie.
+
+And it is probably fair to say that every contribution you make contributes to the metdata Google knows about you, and your dining and entertainment preferences. Probably more, in fact. 
+
+But I was just awareded 100GB of Drive storage for a year for reaching *Level 4* status. A reward that I can use daily, and fits into my family and time situation.
+Google already knows everything about me anyway, so what burgers I like doesn't seem like too much of an intrusion.
+
+== Summary
+
+Rewarding and recognising your content creators with even something small but tangible is a sure-fire way of keeping them loyal to your brand.
+
+Take away incentives to contribute for your users, and you risk collapsing the framework that makes your service successful.
+
+I bet I can level up to *Level 5* when I'm over in Europe. ;)
+
+
+
+
+
