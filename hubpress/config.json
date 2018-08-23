@@ -8,14 +8,15 @@
   },
   "site": {
     "title": "Jared Morgan (jaredmorgs) ",
-    "description": "Product Manager. Podcaster. Technical Writer.",
+    "description": "Tech Writer with a Product focus | Podcaster | Pinball Nut",
     "logo": "/images/covers/logo.jpg",
     "cover": "/images/covers/pinball.jpg",
     "postsPerPage": "5",
     "googleAnalytics": "UA-58317734-1",
     "disqus": "jaredmorgs",
     "url": "http://jaredleonmorgan.net",
-    "delay": "800"
+    "delay": "800",
+    "blogPath": ""
   },
   "socialnetwork": {
     "email": "jaredleonmorgan@gmail.com",
@@ -25,9 +26,11 @@
     "flickr": "https://picasaweb.google.com/117309635670089895654",
     "github": "https://github.com/jaredmorgs/",
     "facebook": "",
-    "instagram": "",
+    "instagram": "https://instagram.com/jaredmorgs",
     "pinterest": "",
-    "stackoverflow": ""
+    "stackoverflow": "",
+    "paypalme": "https://paypal.me/jaredmorgs",
+    "opencollective": ""
   },
   "theme": {
     "name": "uno-zen",
@@ -52,5 +55,6 @@
     "beforeCreate": [
       null
     ]
-  }
+  },
+  "navigation": []
 }
